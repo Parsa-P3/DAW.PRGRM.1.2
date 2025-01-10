@@ -2,6 +2,10 @@ package arrays;
 
 import java.util.Scanner;
 
+// 4. Diseña un programa que solicite al usuario 5 números decimales. A continuación, se
+// muestran los números en el mismo orden que se han introducido.
+
+
 public class array_4 {
     public static void main(String[] args) {
 

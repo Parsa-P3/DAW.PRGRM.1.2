@@ -3,6 +3,12 @@ package arrays;
 // hemos puesto un * despues de ordenarlos abajo en linea 35
 import java.util.*;
 
+// 8. Escribe un programa que utilice una función con el siguiente prototipo
+// int[ ] rellenaPares(int longitud, int fin)
+// La función rellenaPares crea y devuelve un array ordenado de la longitud
+// especificada, cuyos elementos son números pares aleatorios comprendidos en el
+// rango desde 2 hasta fin (inclusive).
+
 public class array_8 {
 
     public static void main(String[] args) {

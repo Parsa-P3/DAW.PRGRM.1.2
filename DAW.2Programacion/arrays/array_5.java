@@ -2,6 +2,11 @@ package arrays;
 
 import java.util.Scanner;
 
+// 5. Diseña un programa que pregunte al usuario cuántos números enteros quiere
+// introducir. A continuación, se solicita esa cantidad de números enteros y por último
+// se imprimen en orden inverso al introducido.
+
+
 public class array_5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
