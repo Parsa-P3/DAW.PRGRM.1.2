@@ -29,9 +29,9 @@ public class array_8 {
     static int[] rellenaPares(int longitud , int fin){
         int[] x = new int[longitud];
         for (int i = 0; i < longitud; i++) {
-            int randompar =(int) (Math.random() * 100);
+            int randompar =(int) (Math.random() * fin) + 1;
             while (!(randompar % 2 == 0) || (randompar > fin)) { 
-                randompar = (int) (Math.random() * 100);
+                randompar = (int) (Math.random() * fin) +1;
                 x[i] = randompar;
                 
             }
