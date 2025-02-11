@@ -1,45 +1,172 @@
-.container{
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: auto; /* Yatay scroll */
+    /* background-color: rgb(135, 135, 135); */
+    background-image: url('https://images6.alphacoders.com/132/thumb-1920-1329060.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ana{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 1600px;
+}
+
+#container3 {
+    background-color: rgba(10, 0, 115, 0.706);
+    width: 400px;
+    height: 1000px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    margin-right: 20px;
+    opacity: 0.9;
+}
+#container1{
+    background-color: rgba(116, 0, 0, 0.778);
+    width: 400px;
+    height: 1000px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    margin-left: 20px;
+    opacity: 0.9;
+   
+}
+
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+li{
+    margin-top: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+#container2{
+    max-width: 300px;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
     grid-template-rows: repeat(3, 1fr); /* 3 filas de igual tamaño */
     gap: 1px; /* Espacio entre los divs */
     height: 100vh; /* Altura completa de la ventana */
+    justify-content: center;
+    margin-top: 36px;
 }
 
-.div{
+.duda{
     width: 200px;
     height: 200px;
-    background-color: rgb(71, 71, 71);
+    background-color: rgba(71, 71, 71, 0.895);
     margin: 10px;
     /* float: inline-start; */
     border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 #div5{
-    align-content: center;
-    margin: 50px;
-    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBAH9dsagNL9BMuGv1tb7EoDjXdldq0QmVM84OD3guzzuuIfKegU1vMuT0-R18zmauMMWlOpnZcE66WHzQCkjEaMZPOGKjqy1tskunLEBBmfKtTW8xikXVQ7HkOS7hldFYtczG4qAhEmrY/s1600/dados-rojos-vector_621212.jpg');
-    background-size: cover;
-    max-width: 200px;
-    max-height: 200px;
-    border-radius: 10px;
+  background-color: rgba(94, 94, 92, 0.845);;
+  justify-items: center;
 }
 
-#dados{ 
-
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-
-}
-
-#resultado{
-    margin-top: 80px;
-    text-align: left;
-    font-size: 70px;
-    font-family: fantasy;
+.butPreguntas{
+    
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+    background-color:  rgb(71, 71, 71);
+    color: aliceblue;
     
 }
 
-.divp{
+#dados{ 
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+    background-color:  rgb(71, 71, 71);
     color: aliceblue;
+}
+
+#resultado{
+    color: aliceblue;
+    margin-top: 30px;
+    text-align: left;
+    font-size: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.divp{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 30px;
+    margin-top: 3px;
+}
+
+#puntos{
+    color: aliceblue;
+    margin-top: 90px;
     text-align: center;
 }
+
+.anyadir{
+    width: 25px;
+    height: 30px;
+}
+
+h1{
+    font-size: 35px;
+    color: rgb(237, 237, 237);
+}
+
+header{
+    font-family: serif;
+    display: flow-root;
+    height: 70px;
+    background-color:  rgba(0, 0, 0, 0.637);
+}
+
+#div1{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/046/292/985/non_2x/pixel-art-illustration-treasure-chest-pixelated-treasure-box-treasure-chest-box-pixelated-for-the-pixel-art-game-and-icon-for-website-and-game-old-school-retro-vector.jpg');
+    background-size: cover;
+}
+
+
+#div2{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLsTt3EcffMIF3VunHL8BO7LK_GEB5f4HVHQ&s');
+    background-size: cover;
+}
+
+#div3{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/050/520/212/non_2x/pixel-art-illustration-pack-of-money-pixelated-pile-of-money-pack-pile-of-money-pixelated-for-the-pixel-art-game-and-icon-for-website-and-game-old-school-retro-free-vector.jpg');
+    background-size: cover;
+}
+
+#div4{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/050/520/212/non_2x/pixel-art-illustration-pack-of-money-pixelated-pile-of-money-pack-pile-of-money-pixelated-for-the-pixel-art-game-and-icon-for-website-and-game-old-school-retro-free-vector.jpg');
+    background-size: cover;
+}
+#div6{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/027/824/303/non_2x/pixel-art-illustration-skull-pixelated-skull-skull-head-icon-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-vector.jpg');
+    background-size: cover;
+}
+
+
+#div7{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/027/824/303/non_2x/pixel-art-illustration-skull-pixelated-skull-skull-head-icon-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-vector.jpg');
+    background-size: cover;
+}
+
+#div8{
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/032/189/250/small/pixel-art-illustration-shield-pixelated-wooden-shield-wood-style-shield-icon-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-vector.jpg');
+    background-size: cover;
+}
+
+#div9{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/050/520/212/non_2x/pixel-art-illustration-pack-of-money-pixelated-pile-of-money-pack-pile-of-money-pixelated-for-the-pixel-art-game-and-icon-for-website-and-game-old-school-retro-free-vector.jpg');
+    background-size: cover;
+}
+
+

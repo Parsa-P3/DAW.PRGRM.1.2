@@ -1,0 +1,41 @@
+body{
+    /* background-color: rgb(159, 139, 116); */
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/037/795/373/small/pixel-art-illustration-gold-bar-pixelated-goldbar-gold-bar-asset-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-vector.jpg');
+    justify-items: center;
+}
+
+#container1 {
+    background-color: rgba(190, 190, 190, 0.967);
+    width: 500px;
+    height: 550px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    font-size: larger;
+    justify-items: center;
+}
+
+#DivPregunta {
+    background-color:rgba(160, 160, 160, 0.967);
+    width: 400px;
+    height: 250px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    margin: 30px;
+    padding: 20px;
+}
+
+#volver{
+    background-color: rgba(160, 160, 160, 0.967);
+}
+
+h1{
+    margin: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#cambiarlaPregunta{
+    margin-top: 300px;
+}
