@@ -1,0 +1,45 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    grid-template-rows: repeat(3, 1fr); /* 3 filas de igual tamaño */
+    gap: 1px; /* Espacio entre los divs */
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+.div{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(71, 71, 71);
+    margin: 10px;
+    /* float: inline-start; */
+    border-radius: 10px;
+}
+
+#div5{
+    align-content: center;
+    margin: 50px;
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBAH9dsagNL9BMuGv1tb7EoDjXdldq0QmVM84OD3guzzuuIfKegU1vMuT0-R18zmauMMWlOpnZcE66WHzQCkjEaMZPOGKjqy1tskunLEBBmfKtTW8xikXVQ7HkOS7hldFYtczG4qAhEmrY/s1600/dados-rojos-vector_621212.jpg');
+    background-size: cover;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 10px;
+}
+
+#dados{ 
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+
+}
+
+#resultado{
+    margin-top: 80px;
+    text-align: left;
+    font-size: 70px;
+    font-family: fantasy;
+    
+}
+
+.divp{
+    color: aliceblue;
+    text-align: center;
+}
