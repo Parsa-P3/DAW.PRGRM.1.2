@@ -22,6 +22,7 @@ function incorrectoAlert(){
     
      document.getElementById('photoss').src = "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmRrMWVqaGEwOHl6dzlnanNqZGxleXNieGdnZm5xZ2tnZGxzbDB6ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wD0ecvxjcc84E/giphy.gif";
      document.getElementById('photoss').style.display = 'block';
+     document.getElementById('photoss').style.width ='500px';
     alert("UPS! INCORRECTO!")
 }
 
