@@ -8,6 +8,9 @@ function correctoAlert(){
     
     correcto.style.backgroundColor = "green"
     incorrecto.style.backgroundColor = "red"
+    
+    document.getElementById('photoss').src = "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWo1eTdmd3Bxa3I4c2lxZHFmNTA1ZDN5ZHk2MXg2YTNmaGNhOGkwMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tlGD7PDy1w8fK/giphy.gif";
+    document.getElementById('photoss').style.display = 'block';
 
     alert("CORRRREEEECTOOO!!")
     
@@ -16,7 +19,9 @@ function correctoAlert(){
 function incorrectoAlert(){
     correcto.style.backgroundColor = "green"
      incorrecto.style.backgroundColor = "red"
-      
+    
+     document.getElementById('photoss').src = "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmRrMWVqaGEwOHl6dzlnanNqZGxleXNieGdnZm5xZ2tnZGxzbDB6ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wD0ecvxjcc84E/giphy.gif";
+     document.getElementById('photoss').style.display = 'block';
     alert("UPS! INCORRECTO!")
 }
 

@@ -62,6 +62,11 @@ main {
     padding: 20px;
 }
 
+#photoss{
+    width: 1100;
+    height: 900;
+}
+
 #DivRespuesta2 {
     
     text-align: center;
