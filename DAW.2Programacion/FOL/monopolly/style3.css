@@ -1,0 +1,45 @@
+body{
+    /* background-color: rgb(159, 139, 116); */
+    background-color: black;
+    background-image: url('https://i.seadn.io/gae/WpAa5DjgQIWRiDafdfVu-_Qwz0E0ajlea0NxvgcbjepRMJo-Z1G5Tlsf3ZWfSQnsr1BIDOpO1SZpoI2seM8HQLARBmHYpgfEtkjT?auto=format&dpr=1&w=1000');
+    justify-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+#container1 {
+    background-color: rgba(190, 190, 190, 0.575);
+    width: 500px;
+    height: 650px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    font-size: larger;
+    justify-items: center;
+}
+
+#DivPregunta {
+    background-color:rgba(160, 160, 160, 0.801);
+    width: 400px;
+    height: 350px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    margin: 30px;
+    padding: 20px;
+}
+
+#volver{
+    background-color: rgba(160, 160, 160, 0.967);
+}
+
+h1{
+    margin: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#cambiarlaPregunta{
+    margin-top: 300px;
+}

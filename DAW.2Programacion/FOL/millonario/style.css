@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(37, 5, 110);
+    background-image: url('https://images.genially.com/5ed85e9c1a8ce35161156ac7/596ddabb-e2e3-4e07-971a-3d80c06cf116.png');
+}
+#containerHeader{
+    min-width: 1600px;
+    margin: 0px;
+    height: 100vh;
+    background-color: rgba(36, 5, 110, 0.699);
+    border-radius: 20px;
+    justify-items: center;
+
+}
+
+/* #amblem{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/LOGO_SPAIN_2021.jpg/1200px-LOGO_SPAIN_2021.jpg') ;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(71, 71, 71, 0.895);
+    margin: 10px;
+    /* float: inline-start; */
+    /* border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    
+ 
+} */ 
+
+h1{
+    color: aliceblue;
+}
+
+#container1{
+    max-width: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr); /* 3 filas de igual tamaño */
+    gap: 1px; /* Espacio entre los divs */
+    height: 400px; /* Altura completa de la ventana */
+    
+    justify-content: center;
+    margin-top: 36px;
+    background-color: aqua;
+}

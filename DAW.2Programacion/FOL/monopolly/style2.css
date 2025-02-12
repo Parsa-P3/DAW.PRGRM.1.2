@@ -1,13 +1,13 @@
 body{
     /* background-color: rgb(159, 139, 116); */
-    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/037/795/373/small/pixel-art-illustration-gold-bar-pixelated-goldbar-gold-bar-asset-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-vector.jpg');
+    background-image: url('https://miro.medium.com/v2/resize:fit:720/format:webp/0*XeZiuUKZQpoU3xW3.gif');
     justify-items: center;
 }
 
 #container1 {
-    background-color: rgba(190, 190, 190, 0.967);
+    background-color: rgba(190, 190, 190, 0.575);
     width: 500px;
-    height: 550px;
+    height: 650px;
     flex-shrink: 0;
     border-radius: 20px;
     margin-right: 20px;
@@ -17,9 +17,9 @@ body{
 }
 
 #DivPregunta {
-    background-color:rgba(160, 160, 160, 0.967);
+    background-color:rgba(160, 160, 160, 0.801);
     width: 400px;
-    height: 250px;
+    height: 350px;
     flex-shrink: 0;
     border-radius: 20px;
     margin: 30px;

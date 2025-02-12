@@ -4,7 +4,7 @@ body{
     padding: 0;
     overflow-x: auto; /* Yatay scroll */
     /* background-color: rgb(135, 135, 135); */
-    background-image: url('https://images6.alphacoders.com/132/thumb-1920-1329060.png');
+    background-image: url('https://miro.medium.com/v2/resize:fit:720/format:webp/0*DnYJmLUX4ofcQ2MR.gif');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -18,7 +18,7 @@ body{
 }
 
 #container3 {
-    background-color: rgba(10, 0, 115, 0.706);
+    background-color: rgba(10, 0, 115, 0.459);
     width: 400px;
     height: 1000px;
     flex-shrink: 0;
@@ -27,7 +27,7 @@ body{
     opacity: 0.9;
 }
 #container1{
-    background-color: rgba(116, 0, 0, 0.778);
+    background-color: rgba(116, 0, 0, 0.507);
     width: 400px;
     height: 1000px;
     flex-shrink: 0;
@@ -72,6 +72,8 @@ li{
 #div5{
   background-color: rgba(94, 94, 92, 0.845);;
   justify-items: center;
+  /* background-image: url('https://miro.medium.com/v2/resize:fit:2000/0*eIhVp0KXrXSSHORN.gif'); */
+  background-size: cover;
 }
 
 .butPreguntas{
@@ -131,6 +133,7 @@ header{
 #div1{
     background-image: url('https://static.vecteezy.com/system/resources/previews/046/292/985/non_2x/pixel-art-illustration-treasure-chest-pixelated-treasure-box-treasure-chest-box-pixelated-for-the-pixel-art-game-and-icon-for-website-and-game-old-school-retro-vector.jpg');
     background-size: cover;
+    /* box-shadow: 0 4px 6px rgba(255, 0, 0, 0.9); */
 }
 
 
@@ -148,6 +151,8 @@ header{
     background-image: url('https://static.vecteezy.com/system/resources/previews/050/520/212/non_2x/pixel-art-illustration-pack-of-money-pixelated-pile-of-money-pack-pile-of-money-pixelated-for-the-pixel-art-game-and-icon-for-website-and-game-old-school-retro-free-vector.jpg');
     background-size: cover;
 }
+
+
 #div6{
     background-image: url('https://static.vecteezy.com/system/resources/previews/027/824/303/non_2x/pixel-art-illustration-skull-pixelated-skull-skull-head-icon-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-vector.jpg');
     background-size: cover;

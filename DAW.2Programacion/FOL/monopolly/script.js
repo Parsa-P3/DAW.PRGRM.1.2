@@ -47,11 +47,11 @@ for (let i = 6; i <= 10; i++) {
 }
 
 
+   let puntosRojos = document.getElementById("puntosRojo");
+   let ganador =6;
 
 function anadirpuntoRojo(){
-    let puntosRojos = document.getElementById("puntosRojo");
-    let currentPoints = parseInt(puntosRojos.innerText); // Metni sayıya çevir
-    let ganador =6;
+ let currentPoints = parseInt(puntosRojos.innerText); // Metni sayıya çevir
 
     if(currentPoints ===ganador){
         alert("Enhorabuena! HA GANADO EL EQUIPO ROJO!")
@@ -93,4 +93,15 @@ function eksiAzul(){
 }
 
 
+function x(){
+    window.open("prBasic.html", "_blank");
+}
+
+function y(){
+    window.open("prMedio.html", "_blank");
+}
+
+function z(){
+    window.open("prDificil.html", "_blank");
+}
 
