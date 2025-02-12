@@ -31,20 +31,20 @@ let jg10 = document.getElementById("jg10");
 // console.log(jg9);
 // console.log(jg10);
 
-// for (let i = 1; i <= 5; i++) {
-//     let nombres = prompt("El nombre de jugador " + i)
-//     let X  = document.getElementById(`jg${i}`); // jg1, jg2, jg3, jg4, jg5
-//     X.innerText = nombres;
-//     console.log(X);
-// }
+for (let i = 1; i <= 5; i++) {
+    let nombres = prompt("El nombre de jugador " + i)
+    let X  = document.getElementById(`jg${i}`); // jg1, jg2, jg3, jg4, jg5
+    X.innerText = nombres;
+    console.log(X);
+}
 
 
-// for (let i = 6; i <= 10; i++) {
-//     let nombres = prompt("El nombre de jugador " + i)
-//     let X  = document.getElementById(`jg${i}`); // jg1, jg2, jg3, jg4, jg5
-//     X.innerText = nombres;
-//     console.log(X);
-// }
+for (let i = 6; i <= 10; i++) {
+    let nombres = prompt("El nombre de jugador " + i)
+    let X  = document.getElementById(`jg${i}`); // jg1, jg2, jg3, jg4, jg5
+    X.innerText = nombres;
+    console.log(X);
+}
 
 
 
