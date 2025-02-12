@@ -1,22 +1,16 @@
 body{
     /* background-color: rgb(159, 139, 116); */
     background-image: url('https://i.redd.it/bpxxqqvps4h91.gif');
+    justify-items: center;
     /* background-repeat: no-repeat; */
     font-size: larger;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 } 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
 
-}
-
-#container1 , #container2 {
+#container1 {
     background-color: rgba(65, 65, 65, 0.842);
     width: 500px;
-    height: 750px;
+    height: 950px;
     flex-shrink: 0;
     border-radius: 20px;
     margin-right: 20px;
@@ -24,16 +18,11 @@ main {
     justify-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     
-    
 }
 
-#container2 {
-    width: 800px;
-}
-
-/* #ss{
+#ss{
     display: flex;
-} */
+}
 
 #DivPregunta {
 
@@ -50,25 +39,17 @@ main {
     
 }
 
-#DivRespuesta1 {
+#DivRespuesta1 , #DivRespuesta2{
     
     text-align: center;
     background-color:rgba(85, 85, 85, 0.925);
     width: 400px;
-    height: 500px;
+    height: 450px;
     margin: 20px;
     border-radius: 20px;
     font-size: 30px;
     padding: 20px;
 }
-
-#DivRespuesta2 {
-    
-    text-align: center;
-    background-color:rgba(85, 85, 85, 0.925);
-
-}
-
 
 #volver{
     background-color: rgba(160, 160, 160, 0.967);
@@ -90,13 +71,8 @@ h1{
 }
 
 p{
-    /* margin-top: 50px; */
+    margin-top: 50px;
     color: aliceblue;
-}
-
-.msg{
-
-    height: 0px;
 }
 
 #sayyyac{
@@ -121,10 +97,4 @@ p{
 #sayac {
     font-size: 48px;
     margin-top: 20px;
-}
-
-#imgfoto{
-    margin-top: 60px;
-    max-width: 800px;
-    border-radius: 20px;
 }

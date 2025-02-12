@@ -31,32 +31,59 @@ let jg10 = document.getElementById("jg10");
 // console.log(jg9);
 // console.log(jg10);
 
-for (let i = 1; i <= 5; i++) {
-    let nombres = prompt("El nombre de jugador " + i)
-    let X  = document.getElementById(`jg${i}`); // jg1, jg2, jg3, jg4, jg5
-    X.innerText = nombres;
-    console.log(X);
+// for (let i = 1; i <= 5; i++) {
+//     let nombres = prompt("El nombre de jugador " + i)
+//     let X  = document.getElementById(`jg${i}`); // jg1, jg2, jg3, jg4, jg5
+//     X.innerText = nombres;
+//     console.log(X);
+// }
+
+
+// for (let i = 6; i <= 10; i++) {
+//     let nombres = prompt("El nombre de jugador " + i)
+//     let X  = document.getElementById(`jg${i}`); // jg1, jg2, jg3, jg4, jg5
+//     X.innerText = nombres;
+//     console.log(X);
+// }
+
+let numPlayersA = parseInt(prompt("¿Cuántos jugadores jugarán en el Equipo A?"));
+for (let i = 1; i <= 10; i++) {
+    let playerElement = document.getElementById(`jg${i}`);
+    if (playerElement) {
+        if (i <= numPlayersA) {
+            let nombre = prompt("Equipo A - Nombre del Jugador " + i + ":");
+            playerElement.innerText = nombre;
+            playerElement.style.display = "list-item";
+        } else {
+            playerElement.style.display = "none";
+        }
+    }
 }
 
-
-for (let i = 6; i <= 10; i++) {
-    let nombres = prompt("El nombre de jugador " + i)
-    let X  = document.getElementById(`jg${i}`); // jg1, jg2, jg3, jg4, jg5
-    X.innerText = nombres;
-    console.log(X);
+let numPlayersB = parseInt(prompt("¿Cuántos jugadores jugarán en el Equipo B?"));
+for (let i = 1; i <= 10; i++) {
+    let playerElement = document.getElementById(`jg${i + 10}`);
+    if (playerElement) {
+        if (i <= numPlayersB) {
+            let nombre = prompt("Equipo B - Nombre del Jugador " + i + ":");
+            playerElement.innerText = nombre;
+            playerElement.style.display = "list-item";
+        } else {
+            playerElement.style.display = "none";
+        }
+    }
 }
-
-
-   let puntosRojos = document.getElementById("puntosRojo");
-   let ganador =6;
 
 function anadirpuntoRojo(){
- let currentPoints = parseInt(puntosRojos.innerText); // Metni sayıya çevir
+
+   let puntosRojos = document.getElementById("puntosRojo");
+   let ganador =2500; 
+   let currentPoints = parseInt(puntosRojos.innerText); // Metni sayıya çevir
 
     if(currentPoints ===ganador){
         alert("Enhorabuena! HA GANADO EL EQUIPO ROJO!")
     }else{
-    puntosRojos.innerText = currentPoints + 1; // Sayısal toplama yap
+    puntosRojos.innerText = currentPoints + 100; // Sayısal toplama yap
     }
    
    
@@ -67,12 +94,12 @@ function anadirpuntoAzul(){
     let currentPoints = parseInt(puntosAzul.innerText);
     
    
-    let ganador =6;
+    let ganador =2500;
     if(currentPoints === ganador){
         alert("Enhorabuena! HA GANADO EL EQUIPO AZUL!")
     }
     else{
-    puntosAzul.innerText = currentPoints + 1; 
+    puntosAzul.innerText = currentPoints + 100; 
     }
 }
 
@@ -80,28 +107,29 @@ function eksiRojo(){
     let puntosRojos = document.getElementById("puntosRojo");
     let currentPoints = parseInt(puntosRojos.innerText); 
     
-    puntosRojos.innerText = currentPoints - 1; 
+    puntosRojos.innerText = currentPoints - 100; 
 }
 
 function eksiAzul(){
     let puntosAzul = document.getElementById("puntosAzul");
     let currentPoints = parseInt(puntosAzul.innerText); 
     
-    puntosAzul.innerText = currentPoints - 1; 
+    puntosAzul.innerText = currentPoints - 100; 
 
    
 }
 
 
 function x(){
-    window.open("prBasic.html", "_blank");
+    window.open("1.html", "_blank");
 }
 
 function y(){
-    window.open("prMedio.html", "_blank");
+    window.open("2.html", "_blank");
 }
 
 function z(){
     window.open("prDificil.html", "_blank");
 }
+
 

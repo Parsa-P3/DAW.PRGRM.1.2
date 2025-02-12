@@ -1,14 +1,22 @@
 let pregunta = document.getElementById("Pregunta")
-let correcto = document.getElementById("correcto");
-let incorrecto = document.getElementById("incorrecto");
+let correcto = document.getElementById("DivRespuesta1");
+let incorrecto = document.getElementById("DivRespuesta2");
+
+
 
 function correctoAlert(){
+    
     correcto.style.backgroundColor = "green"
     incorrecto.style.backgroundColor = "red"
+
     alert("CORRRREEEECTOOO!!")
+    
 }
 
 function incorrectoAlert(){
+    correcto.style.backgroundColor = "green"
+     incorrecto.style.backgroundColor = "red"
+      
     alert("UPS! INCORRECTO!")
 }
 

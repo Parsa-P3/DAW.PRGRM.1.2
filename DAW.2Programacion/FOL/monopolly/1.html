@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="script2.js" defer></script>
+
+</head>
+<body>
+    <main>
+        <div id="container1">
+            <div id="ss">
+            <div id="DivRespuesta1" >
+                <p>Puede que exista una regla así, si está firmada tengo que quedarme!</p>
+                <button type="button" id="correcto" onclick="correctoAlert()"> Click me! </button>
+            </div>
+            <div id="DivPregunta">
+                <h1> Pregunta 1!</h1>
+                <h3 id="Pregunta">"Tu empleador te ha pedido que te quedes horas extra, pero tú quieres irte a casa a descansar. Dicen que en tu contrato hay una cláusula que establece que es obligatorio trabajar horas extra hasta un 20 % de tu jornada total. <br><br>¿Crees que una cláusula así podría existir o simplemente te irías a casa a descansar?</h3>
+            </div>
+            <div id="DivRespuesta2">
+                <p>No puede existir tal regla, es ilegal obligar a empleado a horas extras. Puedo ir a casa!</p>
+                <button type="button" id="incorrecto" onclick="incorrectoAlert()">Click me! </button>
+            </div>
+        </div>
+
+        <div id="sayyyac">
+            <button id="sayacButton" onclick="startCountdown()">Contador Tiempo!</button>
+            <h3 id="countdown">90</h3> 
+        
+        </div>
+        </div>
+    </main>
+    
+    <script>
+        function startCountdown() {
+    let count = 90; // Başlangıç değeri
+    const countdownElement = document.getElementById("countdown");
+
+    const timer = setInterval(function() {
+      countdownElement.textContent = count; // Sayıyı güncelle
+      count--; // 1 azalt
+
+      if (count < 0) { // 0'a gelince durdur
+        clearInterval(timer);
+        countdownElement.textContent = "Se acabo el tiempo!";
+      }
+    }, 1000); // 1000 ms = 1 saniye
+  }
+
+    </script>
+
+</body>
+<footer>
+    <button type="button" id="cambiarlaPregunta" onclick="cambiarlaPregunta()">mix</button>
+</footer>
+</html>

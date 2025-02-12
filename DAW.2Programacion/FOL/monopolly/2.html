@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="script2.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <div id="container1">
+            <p style="font-size: 30px; text-align: center;">Cual de los opciones de abajo es incorrecto!</p>
+            <div id="ss">
+                <div id="DivRespuesta1">
+                    
+
+                    <!-- ✅ Mesaj alanları + Butonlar -->
+                    <div>
+                        <p class="msg" id="msg1">Mensaje 1</p>
+                        <button id="btn1" onclick="correctoAlert()">Opción 1</button>
+                    </div>
+
+                    <div id="DivRespuesta2">
+                    <div>
+                        <p class="msg" id="msg2">Mensaje 2</p>
+                        <button id="btn2" onclick="incorrectoAlert()">Opción 2</button>
+                    </div>
+
+                    <div>
+                        <p class="msg" id="msg3">Mensaje 3</p>
+                        <button id="btn3" onclick="incorrectoAlert()">Opción 3</button>
+                    </div>
+
+                    <div>
+                        <p class="msg" id="msg4">Mensaje 4</p>
+                        <button  id="btn4" onclick="incorrectoAlert()">Opción 4</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+          
+
+            <div id="sayyyac">
+                <button id="sayacButton" onclick="startCountdown()">Contador Tiempo!</button>
+                <h3 id="countdown">90</h3> 
+            </div>
+        </div>
+        <div id="container2">
+            <div id="divfoto">
+
+                <img id="imgfoto" src="./pics/{C82DDB5D-6913-4CD9-8527-0C3350D29A08}.png" alt="">
+
+            </div>
+
+        </div>
+    </main>
+    <script>
+        function startCountdown() {
+    let count = 90; // Başlangıç değeri
+    const countdownElement = document.getElementById("countdown");
+
+    const timer = setInterval(function() {
+      countdownElement.textContent = count; // Sayıyı güncelle
+      count--; // 1 azalt
+
+      if (count < 0) { // 0'a gelince durdur
+        clearInterval(timer);
+        countdownElement.textContent = "Se acabo el tiempo!";
+      }
+    }, 1000); // 1000 ms = 1 saniye
+  }
+
+    </script>
+</body>
+
+</html>
