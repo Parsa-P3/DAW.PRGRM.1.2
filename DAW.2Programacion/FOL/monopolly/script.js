@@ -31,48 +31,116 @@ let jg10 = document.getElementById("jg10");
 // console.log(jg9);
 // console.log(jg10);
 
+
+// let numPlayersA = parseInt(prompt("¿Cuántos jugadores jugarán en el Equipo Rojo?"));
 // for (let i = 1; i <= 5; i++) {
-//     let nombres = prompt("El nombre de jugador " + i)
-//     let X  = document.getElementById(`jg${i}`); // jg1, jg2, jg3, jg4, jg5
-//     X.innerText = nombres;
-//     console.log(X);
+//     let playerElement = document.getElementById(`jg${i}`);
+//     if (playerElement) {
+//         if (i <= numPlayersA) {
+//             let nombre = prompt("Equipo A - Nombre del Jugador " + i + ":");
+//             playerElement.innerText = nombre;
+//             playerElement.style.display = "list-item";
+//         } else {
+//             playerElement.style.display = "none";
+//         }
+//     }
+// }
+// let numPlayersC = parseInt(prompt("¿Cuántos jugadores jugarán en el Equipo Amarillo?"));
+// for (let i = 1; i <= 5; i++) {
+//     let playerElement = document.getElementById(`jg${i+5}`);
+//     if (playerElement) {
+//         if (i <= numPlayersA) {
+//             let nombre = prompt("Equipo A - Nombre del Jugador " + i + ":");
+//             playerElement.innerText = nombre;
+//             playerElement.style.display = "list-item";
+//         } else {
+//             playerElement.style.display = "none";
+//         }
+//     }
 // }
 
-
-// for (let i = 6; i <= 10; i++) {
-//     let nombres = prompt("El nombre de jugador " + i)
-//     let X  = document.getElementById(`jg${i}`); // jg1, jg2, jg3, jg4, jg5
-//     X.innerText = nombres;
-//     console.log(X);
+// let numPlayersB = parseInt(prompt("¿Cuántos jugadores jugarán en el Equipo Azul?"));
+// for (let i = 1; i <= 5; i++) {
+//     let playerElement = document.getElementById(`jg${i + 10}`);
+//     if (playerElement) {
+//         if (i <= numPlayersB) {
+//             let nombre = prompt("Equipo B - Nombre del Jugador " + i + ":");
+//             playerElement.innerText = nombre;
+//             playerElement.style.display = "list-item";
+//         } else {
+//             playerElement.style.display = "none";
+//         }
+//     }
 // }
 
-let numPlayersA = parseInt(prompt("¿Cuántos jugadores jugarán en el Equipo A?"));
-for (let i = 1; i <= 10; i++) {
-    let playerElement = document.getElementById(`jg${i}`);
-    if (playerElement) {
-        if (i <= numPlayersA) {
-            let nombre = prompt("Equipo A - Nombre del Jugador " + i + ":");
-            playerElement.innerText = nombre;
-            playerElement.style.display = "list-item";
-        } else {
-            playerElement.style.display = "none";
-        }
-    }
-}
+// let numPlayersD= parseInt(prompt("¿Cuántos jugadores jugarán en el Equipo Rosado?"));
+// for (let i = 1; i <= 5; i++) {
+//     let playerElement = document.getElementById(`jg${i + 15}`);
+//     if (playerElement) {
+//         if (i <= numPlayersB) {
+//             let nombre = prompt("Equipo B - Nombre del Jugador " + i + ":");
+//             playerElement.innerText = nombre;
+//             playerElement.style.display = "list-item";
+//         } else {
+//             playerElement.style.display = "none";
+//         }
+//     }
+// }
 
-let numPlayersB = parseInt(prompt("¿Cuántos jugadores jugarán en el Equipo B?"));
-for (let i = 1; i <= 10; i++) {
-    let playerElement = document.getElementById(`jg${i + 10}`);
-    if (playerElement) {
-        if (i <= numPlayersB) {
-            let nombre = prompt("Equipo B - Nombre del Jugador " + i + ":");
-            playerElement.innerText = nombre;
-            playerElement.style.display = "list-item";
-        } else {
-            playerElement.style.display = "none";
-        }
-    }
-}
+let numPlayersA = parseInt(prompt("¿Cuántos jugadores jugarán en el Equipo Rojo?"));
+// for (let i = 1; i <= 5; i++) {
+//     let playerElement = document.getElementById(`jg${i}`);
+//     if (playerElement) {
+//         if (i <= numPlayersA) {
+//             let nombre = prompt("Equipo A - Nombre del Jugador " + i + ":");
+//             playerElement.innerText = nombre;
+//             playerElement.style.display = "list-item";
+//         } else {
+//             playerElement.style.display = "none";
+//         }
+//     }
+// }
+// let numPlayersC = parseInt(prompt("¿Cuántos jugadores jugarán en el Equipo Amarillo?"));
+// for (let i = 1; i <= 5; i++) {
+//     let playerElement = document.getElementById(`jg${i+5}`);
+//     if (playerElement) {
+//         if (i <= numPlayersA) {
+//             let nombre = prompt("Equipo A - Nombre del Jugador " + i + ":");
+//             playerElement.innerText = nombre;
+//             playerElement.style.display = "list-item";
+//         } else {
+//             playerElement.style.display = "none";
+//         }
+//     }
+// }
+
+// let numPlayersB = parseInt(prompt("¿Cuántos jugadores jugarán en el Equipo Azul?"));
+// for (let i = 1; i <= 5; i++) {
+//     let playerElement = document.getElementById(`jg${i + 10}`);
+//     if (playerElement) {
+//         if (i <= numPlayersB) {
+//             let nombre = prompt("Equipo B - Nombre del Jugador " + i + ":");
+//             playerElement.innerText = nombre;
+//             playerElement.style.display = "list-item";
+//         } else {
+//             playerElement.style.display = "none";
+//         }
+//     }
+// }
+
+// let numPlayersD= parseInt(prompt("¿Cuántos jugadores jugarán en el Equipo Rosado?"));
+// for (let i = 1; i <= 5; i++) {
+//     let playerElement = document.getElementById(`jg${i + 15}`);
+//     if (playerElement) {
+//         if (i <= numPlayersB) {
+//             let nombre = prompt("Equipo B - Nombre del Jugador " + i + ":");
+//             playerElement.innerText = nombre;
+//             playerElement.style.display = "list-item";
+//         } else {
+//             playerElement.style.display = "none";
+//         }
+//     }
+// }
 
 function anadirpuntoRojo(){
 
@@ -89,8 +157,37 @@ function anadirpuntoRojo(){
    
 }
 
+function anadirpuntoAmarillo(){
+
+    let puntosRojos = document.getElementById("puntosAmarillo");
+    let ganador =2500; 
+    let currentPoints = parseInt(puntosRojos.innerText); // Metni sayıya çevir
+ 
+     if(currentPoints ===ganador){
+         alert("Enhorabuena! HA GANADO EL EQUIPO ROJO!")
+     }else{
+     puntosRojos.innerText = currentPoints + 100; // Sayısal toplama yap
+     }
+    
+    
+ }
+
 function anadirpuntoAzul(){
     let puntosAzul = document.getElementById("puntosAzul");
+    let currentPoints = parseInt(puntosAzul.innerText);
+    
+   
+    let ganador =2500;
+    if(currentPoints === ganador){
+        alert("Enhorabuena! HA GANADO EL EQUIPO AZUL!")
+    }
+    else{
+    puntosAzul.innerText = currentPoints + 100; 
+    }
+}
+
+function anadirpuntoRosado(){
+    let puntosAzul = document.getElementById("puntosRosado");
     let currentPoints = parseInt(puntosAzul.innerText);
     
    
@@ -109,6 +206,12 @@ function eksiRojo(){
     
     puntosRojos.innerText = currentPoints - 100; 
 }
+function eksiAmarillo(){
+    let puntosRojos = document.getElementById("puntosAmarillo");
+    let currentPoints = parseInt(puntosRojos.innerText); 
+    
+    puntosRojos.innerText = currentPoints - 100; 
+}
 
 function eksiAzul(){
     let puntosAzul = document.getElementById("puntosAzul");
@@ -119,6 +222,14 @@ function eksiAzul(){
    
 }
 
+function eksiRosado(){
+    let puntosAzul = document.getElementById("puntosRosado");
+    let currentPoints = parseInt(puntosAzul.innerText); 
+    
+    puntosAzul.innerText = currentPoints - 100; 
+
+   
+}
 
 function x(){
     window.open("1.html", "_blank");

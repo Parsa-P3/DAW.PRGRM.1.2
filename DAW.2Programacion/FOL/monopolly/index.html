@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,113 +12,150 @@
 
     <h1>ContraPolly!</h1>
 </header>
-<body >
-    <div id="background">
-    <main>
-        
-        <div id="ana"> 
-        <div id="container1">
-                <div id="team1" style="color: aliceblue;">
-                    <h1> Equipo Rojo!</h1>
-                    <ul>
-                        <li id="jg1" class="li">Jugador 1</li>
-                        <li id="jg2" class="li">Jugador 2</li>
-                        <li id="jg3" class="li">Jugador 3</li>
-                        <li id="jg4" class="li">Jugador 4</li>
-                        <li id="jg5" class="li">Jugador 5</li>
-                        <li id="jg6" class="li">Jugador 1</li>
-                        <li id="jg7" class="li">Jugador 2</li>
-                        <li id="jg8" class="li">Jugador 3</li>
-                        <li id="jg9" class="li">Jugador 4</li>
-                        <li id="jg10" class="li">Jugador 5</li>
-                    </ul>
-                </div>
-                <div id="puntos">
-                    <h2>
-                        Salario : 
-                    </h2>
-                    <h3 id="puntosRojo">
-                        1500
-                    </h3>
-                    <button class="anyadir" type="button" onclick="anadirpuntoRojo()">+</button>
-                    <button class="eksi" type="button" onclick="eksiRojo()">-</button>
-                </div>
-                    <br>
-        </div>
-    
-        <div id="container2">
-                <div id="div1" class="duda">
-                    <p class="divp" id="text1">1</p>
-                    
-                    <button type="button" class="butPreguntas" onclick="x()"> info(!)</button>
-            
-                </div>
-        <div id="div2" class="duda">
-            <p class="divp" id="text2">2</p>
-            <button type="button" class="butPreguntas" onclick="y()"> info(!)</button>
-        </div>
-        <div id="div3" class="duda">
-            <p class="divp" id="text3">3</p>
-            <button type="button" class="butPreguntas" onclick="y()"> info(!)</button>
-        </div>
-        <div id="div4" class="duda">
-            <p class="divp" id="text1">8</p>
-            <button type="button" class="butPreguntas" onclick="y()"> info(!)</button>
-        </div>
-        <div id="div5" class="duda">
-            <button type="button" id="dados" onclick="lanzardado()">Lanzar dados!</button>
-            <p id="resultado">6</p>
-        </div>
-        <div id="div6" class="duda">
-            <p class="divp" id="text5">4</p>
-            <button type="button" class="butPreguntas" onclick="z()"> info(!)</button>
-        </div>
-        <div id="div7" class="duda">
-            <p class="divp" id="text6">7</p>
-            <button type="button" class="butPreguntas" onclick="z()"> info(!)</button>
-        </div>
-        <div id="div8" class="duda">
-            <p class="divp" id="text7">6</p>
-            <button type="button" class="butPreguntas" onclick="z()"> info(!)</button>
-        </div>
-        <div id="div9" class="duda">
-            <p class="divp" id="text8">5</p>
-            <button type="button" class="butPreguntas" onclick="y()"> info(!)</button>
-        </div>
-    </div>
-    <div id="container3">
-        <div id="team2" style="color: aliceblue;">
-            <h1> Equipo Azul!</h1>
-            <ul>
-                <li id="jg11" class="li">Jugador 1</li>
-                <li id="jg12" class="li">Jugador 2</li>
-                <li id="jg13" class="li">Jugador 3</li>
-                <li id="jg14" class="li">Jugador 4</li>
-                <li id="jg15" class="li">Jugador 5</li>
-                <li id="jg16" class="li">Jugador 1</li>
-                <li id="jg17" class="li">Jugador 2</li>
-                <li id="jg18" class="li">Jugador 3</li>
-                <li id="jg19" class="li">Jugador 4</li>
-                <li id="jg20" class="li">Jugador 5</li>
-            </ul>
-            <div id="puntos">
-                <h2>
-                    SALARIO : 
-                </h2>
-                <h3 id="puntosAzul">
-                    1500
-                </h3>
-                <button  class="anyadir" type="button" onclick="anadirpuntoAzul()">+</button>
-                <button class="eksi" type="button" onclick="eksiAzul()">-</button>
-               <br><br>
-            </div>
-            <br>
-            </div>
-        </div>
-    </div>
-</div>
 
-    </main>
-</div>
+<body>
+    <div id="background">
+        <main>
+
+            <div id="ana">
+                <div id="container1">
+                    <div id="team1" style="color: aliceblue;">
+                        <h1> Equipo Rojo!</h1>
+                        <ul>
+                            <li id="jg1" class="li">Jugador 1</li>
+                            <li id="jg2" class="li">Jugador 2</li>
+                            <li id="jg3" class="li">Jugador 3</li>
+                            <li id="jg4" class="li">Jugador 4</li>
+                            <li id="jg5" class="li">Jugador 5</li>
+
+                        </ul>
+
+
+                    </div>
+                    <div id="puntos">
+                        <h2>
+                            Salario Equipo Rojo :
+                        </h2>
+                        <h3 id="puntosRojo">
+                            1500
+                        </h3>
+                        <button class="anyadir" type="button" onclick="anadirpuntoRojo()">+</button>
+                        <button class="eksi" type="button" onclick="eksiRojo()">-</button>
+                        <h2>
+                            Salario Equipo Amarillo:
+                        </h2>
+                        <h3 id="puntosAmarillo">
+                            1500
+                        </h3>
+                        <button class="anyadir" type="button" onclick="anadirpuntoAmarillo()">+</button>
+                        <button class="eksi" type="button" onclick="eksiAmarillo()">-</button>
+                    </div>
+                    <div id="team3" style="color: aliceblue;">
+                        <h1> Equipo Amarillo!</h1>
+                        <ul>
+                            <li id="jg6" class="li">Jugador 1</li>
+                            <li id="jg7" class="li">Jugador 2</li>
+                            <li id="jg8" class="li">Jugador 3</li>
+                            <li id="jg9" class="li">Jugador 4</li>
+                            <li id="jg10" class="li">Jugador 5</li>
+                        </ul>
+                    </div>
+
+                    <br><br><br>
+                </div>
+
+                <div id="container2">
+                    <div id="div1" class="duda">
+                        <p class="divp" id="text1">1</p>
+
+                        <button type="button" class="butPreguntas" onclick="x()"> info(!)</button>
+
+                    </div>
+                    <div id="div2" class="duda">
+                        <p class="divp" id="text2">2</p>
+                        <button type="button" class="butPreguntas" onclick="y()"> info(!)</button>
+                    </div>
+                    <div id="div3" class="duda">
+                        <p class="divp" id="text3">3</p>
+                        <button type="button" class="butPreguntas" onclick="y()"> info(!)</button>
+                    </div>
+                    <div id="div4" class="duda">
+                        <p class="divp" id="text1">8</p>
+                        <button type="button" class="butPreguntas" onclick="y()"> info(!)</button>
+                    </div>
+                    <div id="div5" class="duda">
+                        <button type="button" id="dados" onclick="lanzardado()">Lanzar dados!</button>
+                        <p id="resultado">6</p>
+                    </div>
+                    <div id="div6" class="duda">
+                        <p class="divp" id="text5">4</p>
+                        <button type="button" class="butPreguntas" onclick="z()"> info(!)</button>
+                    </div>
+                    <div id="div7" class="duda">
+                        <p class="divp" id="text6">7</p>
+                        <button type="button" class="butPreguntas" onclick="z()"> info(!)</button>
+                    </div>
+                    <div id="div8" class="duda">
+                        <p class="divp" id="text7">6</p>
+                        <button type="button" class="butPreguntas" onclick="z()"> info(!)</button>
+                    </div>
+                    <div id="div9" class="duda">
+                        <p class="divp" id="text8">5</p>
+                        <button type="button" class="butPreguntas" onclick="y()"> info(!)</button>
+                    </div>
+                </div>
+                <div id="container3">
+                    <div id="team2" style="color: aliceblue;">
+                        <h1> Equipo Azul!</h1>
+                        <ul>
+                            <li id="jg11" class="li">Jugador 1</li>
+                            <li id="jg12" class="li">Jugador 2</li>
+                            <li id="jg13" class="li">Jugador 3</li>
+                            <li id="jg14" class="li">Jugador 4</li>
+                            <li id="jg15" class="li">Jugador 5</li>
+
+                        </ul>
+                        <div id="puntos">
+                            <h2>
+                                Salario Equipo Azul :
+                            </h2>
+                            <h3 id="puntosAzul">
+                                1500
+                            </h3>
+                            <button class="anyadir" type="button" onclick="anadirpuntoAzul()">+</button>
+                            <button class="eksi" type="button" onclick="eksiAzul()">-</button>
+                          
+                          </div>
+                    </div>
+
+                      <div id="puntos" >
+                        <h2>
+                            Salario Equipo rosado :
+                        </h2>
+                        <h3 id="puntosRosado">
+                            1500
+                        </h3>
+                        <button class="anyadir" type="button" onclick="anadirpuntoRosado()">+</button>
+                        <button class="eksi" type="button" onclick="eksiRosado()">-</button>
+                    </div>
+                    <div id="team4" style="color: aliceblue;">
+                        <h1> Equipo Rosado!</h1>
+                        <ul>
+                            <li id="jg16" class="li">Jugador 1</li>
+                            <li id="jg17" class="li">Jugador 2</li>
+                            <li id="jg18" class="li">Jugador 3</li>
+                            <li id="jg19" class="li">Jugador 4</li>
+                            <li id="jg20" class="li">Jugador 5</li>
+                        </ul>
+                    </div>
+
+                    <br><br><br>
+
+                </div>
+            </div>
+
+        </main>
+    </div>
 </body>
+
 </html>

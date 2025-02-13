@@ -17,10 +17,31 @@ body {
     min-width: 1600px;
 }
 
-#container3 {
+/* #container3 {
+
+} */
+
+/* #container1 {
+  
+
+} */
+
+
+#team1{
+    background-color: rgba(116, 0, 0, 0.507);
+    width: 400px;
+    height: 500px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    margin-left: 20px;
+    opacity: 0.9;
+    margin-top: 20px;
+}
+
+#team2{
     background-color: rgba(10, 0, 115, 0.459);
     width: 400px;
-    height: 1000px;
+    height: 500px;
     flex-shrink: 0;
     border-radius: 20px;
     margin-right: 20px;
@@ -28,16 +49,26 @@ body {
     margin-top: 20px;
 }
 
-#container1 {
-    background-color: rgba(116, 0, 0, 0.507);
+#team3{
+    background-color: rgba(116, 95, 0, 0.507);
     width: 400px;
-    height: 1000px;
+    height: 500px;
     flex-shrink: 0;
     border-radius: 20px;
     margin-left: 20px;
     opacity: 0.9;
     margin-top: 20px;
+}
 
+#team4{
+    background-color: rgba(139, 0, 139, 0.459);
+    width: 400px;
+    height: 500px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    margin-right: 20px;
+    opacity: 0.9;
+    margin-top: 20px;
 }
 
 h1 {
@@ -120,7 +151,7 @@ li {
 #puntos {
     color: aliceblue;
     text-align: center;
-    display: flex;
+    /* display: flex; */
     align-items: baseline;
     margin: 30px;
     margin-top: 90px;
