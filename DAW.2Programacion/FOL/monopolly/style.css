@@ -33,9 +33,11 @@ body {
     height: 500px;
     flex-shrink: 0;
     border-radius: 20px;
-    margin-left: 20px;
+    margin-left: 40px;
     opacity: 0.9;
     margin-top: 20px;
+    display: inline-block;
+    padding: 20px;
 }
 
 #team2{
@@ -47,6 +49,7 @@ body {
     margin-right: 20px;
     opacity: 0.9;
     margin-top: 20px;
+    padding: 20px;
 }
 
 #team3{
@@ -55,9 +58,10 @@ body {
     height: 500px;
     flex-shrink: 0;
     border-radius: 20px;
-    margin-left: 20px;
+    margin-left: 40px;
     opacity: 0.9;
     margin-top: 20px;
+    padding: 20px;
 }
 
 #team4{
@@ -69,6 +73,7 @@ body {
     margin-right: 20px;
     opacity: 0.9;
     margin-top: 20px;
+    padding: 20px;
 }
 
 h1 {
@@ -113,7 +118,7 @@ li {
     background-color: rgba(94, 94, 92, 0.845);
     ;
     justify-items: center;
-    background-image: url('https://i.redd.it/x04d1m2l4uub1.gif');
+    background-image: url('./pics/dado.gif');
     background-size: cover;
 }
 
@@ -150,9 +155,9 @@ li {
 
 #puntos {
     color: aliceblue;
-    text-align: center;
+    /* text-align: center; */
     /* display: flex; */
-    align-items: baseline;
+    /* align-items: baseline; */
     margin: 30px;
     margin-top: 90px;
 }

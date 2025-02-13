@@ -26,52 +26,70 @@ function incorrectoAlert(){
     alert("UPS! INCORRECTO!")
 }
 
+let pIncorrecto = document.getElementById("pIncorrecto");
+let pCorrecto = document.getElementById("pCorrecto")
+// HEY
+// asagida yaptigimiz da cevap yerleri degisiyor ama orta soru kutucugu kayiyor onu duzeltmemizlazm
 function cambiarlaPregunta(){
-    let random = Math.floor(Math.random() * 10) + 1;
+    let random = Math.floor(Math.random() * 1) + 1;
     if(random === 1){
-        pregunta.innerText = ("pregunta 2");
-        correcto.innerText = ("Respuesta correcta para pregunta  2");
-        incorrecto.innerText = ("Respuesta incorrecta para pregunta 2");
-    }else if(random === 2){
-        pregunta.innerText = ("pregunta 3")
-        correcto.innerText = ("Respuesta correcta para pregunta  3");
-        incorrecto.innerText = ("Respuesta incorrecta para pregunta 3");
-    }
-    else if(random === 3){
-        pregunta.innerText = ("pregunta 4")
-        correcto.innerText = ("Respuesta correcta para pregunta  4");
-        incorrecto.innerText = ("Respuesta incorrecta para pregunta 4");
-    }
-    else if(random === 4){
-        pregunta.innerText = ("pregunta 5")
-        correcto.innerText = ("Respuesta correcta para pregunta  5");
-        incorrecto.innerText = ("Respuesta incorrecta para pregunta 5");
-    }
-    else if(random === 5){
-        pregunta.innerText = ("pregunta 6")
-        correcto.innerText = ("Respuesta correcta para pregunta  6");
-        incorrecto.innerText = ("Respuesta incorrecta para pregunta 6");
-    }
-    else if(random === 6){
-        pregunta.innerText = ("pregunta 7")
-        correcto.innerText = ("Respuesta correcta para pregunta  7");
-        incorrecto.innerText = ("Respuesta incorrecta para pregunta 7");
-    }
-    else if(random === 7){
-        pregunta.innerText = ("pregunta 8")
-        correcto.innerText = ("Respuesta correcta para pregunta  8");
-        incorrecto.innerText = ("Respuesta incorrecta para pregunta 8");
-    }
-    else if(random === 8){
-        pregunta.innerText = ("pregunta 9")
-        correcto.innerText = ("Respuesta correcta para pregunta  9");
-        incorrecto.innerText = ("Respuesta incorrecta para pregunta 9");
-    }
-    else if(random === 9){
-        pregunta.innerText = ("pregunta 10s")
-        correcto.innerText = ("Respuesta correcta para pregunta  10");
-        incorrecto.innerText = ("Respuesta incorrecta para pregunta 10");
-    }
+      
+        pregunta.innerText = ("Marcos empieza su turno a las 08:00. Llega a su puesto de trabajo a las 07:58 y comienza a cambiarse de ropa, por lo que está listo a las 08:05. ¡Qué ocurre en este caso?");
+        pCorrecto.innerText = ("Marcos debió cambiarse antes de su hora de inicio. Se exige que los trabajadores estén cambiados y listos para comenzar su jornada a la hora establecida.");
+        pIncorrecto.innerText = ("No pasa nada, mientras fiche a su hora, puede tomarse unos minutos para cambiarse.");
+        
+        let parent = correcto.parentNode;
+        parent.insertBefore(incorrecto , correcto)
+     }//  else if(random === 2){
+    //     pregunta.innerText = ("pregunta 3")
+    //     pCorrecto.innerText = ("Respuesta correcta para pregunta  3");
+    //     incorrecto.innerText = ("Respuesta incorrecta para pregunta 3");
+    // }
+    // else if(random === 3){
+    //     pregunta.innerText = ("pregunta 4")
+    //     correcto.innerText = ("Respuesta correcta para pregunta  4");
+    //     incorrecto.innerText = ("Respuesta incorrecta para pregunta 4");
+    // }
+    // else if(random === 4){
+    //     pregunta.innerText = ("pregunta 5")
+    //     correcto.innerText = ("Respuesta correcta para pregunta  5");
+    //     incorrecto.innerText = ("Respuesta incorrecta para pregunta 5");
+    // }
+    // else if(random === 5){
+    //     pregunta.innerText = ("pregunta 6")
+    //     correcto.innerText = ("Respuesta correcta para pregunta  6");
+    //     incorrecto.innerText = ("Respuesta incorrecta para pregunta 6");
+    // }
+    // else if(random === 6){
+    //     pregunta.innerText = ("pregunta 7")
+    //     correcto.innerText = ("Respuesta correcta para pregunta  7");
+    //     incorrecto.innerText = ("Respuesta incorrecta para pregunta 7");
+    // }
+    // else if(random === 7){
+    //     pregunta.innerText = ("pregunta 8")
+    //     correcto.innerText = ("Respuesta correcta para pregunta  8");
+    //     incorrecto.innerText = ("Respuesta incorrecta para pregunta 8");
+    // }
+    // else if(random === 8){
+    //     pregunta.innerText = ("pregunta 9")
+    //     correcto.innerText = ("Respuesta correcta para pregunta  9");
+    //     incorrecto.innerText = ("Respuesta incorrecta para pregunta 9");
+    // }
+    // else if(random === 9){
+    //     pregunta.innerText = ("pregunta 10s")
+    //     correcto.innerText = ("Respuesta correcta para pregunta  10");
+    //     incorrecto.innerText = ("Respuesta incorrecta para pregunta 10");
+    // }
     
+        // Butonları görünür yapma işlemi
+        correcto.style.display = "block"; // Doğru butonunu görünür yap
+        incorrecto.style.display = "block"; // Yanlış butonunu görünür yap
+        
+        // Varsayılan renkleri geri yükle
+        correcto.style.backgroundColor = "rgba(85, 85, 85, 0.925)";
+        incorrecto.style.backgroundColor = "rgba(85, 85, 85, 0.925)";
+        
+        // Resmi sıfırlayın
+        document.getElementById('photoss').style.display = 'none';
     
 }

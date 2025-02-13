@@ -33,7 +33,7 @@ body{
     border-radius: 20px;
     margin: 30px;
     padding: 20px;
-    color: rgb(0, 0, 0);
+    color: aliceblue;
     font-size: 30px;
 
     
@@ -49,6 +49,9 @@ body{
     border-radius: 20px;
     font-size: 30px;
     padding: 20px;
+    display: block;
+    cursor: pointer;
+    color: aliceblue;
 }
 
 #volver{
