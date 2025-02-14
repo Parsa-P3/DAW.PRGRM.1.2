@@ -15,52 +15,52 @@ let jg4 = document.getElementById("jg4");
 
 
 
-                // function capitanRojo(){
-                // let playerElement = document.getElementById(`jg${1}`);
+                function capitanRojo(){
+                let playerElement = document.getElementById(`jg${1}`);
             
-                //         let nombre = prompt("Quien Es Capitan de Equipo Rojo? ");
-                //         playerElement.innerText = nombre;
-                //         playerElement.style.display = "h2";
-                //         playerElement.style.textAlign = "center"
+                        let nombre = prompt("Quien Es Capitan de Equipo Rojo? ");
+                        playerElement.innerText = nombre;
+                        playerElement.style.display = "h2";
+                        playerElement.style.textAlign = "center"
                 
-                // }
-                // capitanRojo();
+                }
+                capitanRojo();
 
 
-                // function capitanAmarillo(){
-                //     let playerElement = document.getElementById(`jg${2}`);
+                function capitanAmarillo(){
+                    let playerElement = document.getElementById(`jg${2}`);
                 
-                //             let nombre = prompt("Quien Es Capitan de Equipo Amarillo? ");
-                //             playerElement.innerText = nombre;
-                //             playerElement.style.display = "h2";
-                //             playerElement.style.textAlign = "center"
+                            let nombre = prompt("Quien Es Capitan de Equipo Amarillo? ");
+                            playerElement.innerText = nombre;
+                            playerElement.style.display = "h2";
+                            playerElement.style.textAlign = "center"
                     
-                //     }
-                //  capitanAmarillo();
+                    }
+                 capitanAmarillo();
                  
 
-                // function capitanAzul(){
-                //     let playerElement = document.getElementById(`jg${3}`);
+                function capitanAzul(){
+                    let playerElement = document.getElementById(`jg${3}`);
                 
-                //             let nombre = prompt("Quien Es Capitan de Equipo Azul? ");
-                //             playerElement.innerText = nombre;
-                //             playerElement.style.display = "h2";
-                //             playerElement.style.textAlign = "center"
+                            let nombre = prompt("Quien Es Capitan de Equipo Azul? ");
+                            playerElement.innerText = nombre;
+                            playerElement.style.display = "h2";
+                            playerElement.style.textAlign = "center"
                     
-                //     }
-                //     capitanAzul();
+                    }
+                    capitanAzul();
 
 
-                //     function capitanRosado(){
-                //         let playerElement = document.getElementById(`jg${4}`);
+                    function capitanRosado(){
+                        let playerElement = document.getElementById(`jg${4}`);
                     
-                //                 let nombre = prompt("Quien Es Capitan de Equipo Rosado? ");
-                //                 playerElement.innerText = nombre;
-                //                 playerElement.style.display = "h2";
-                //                 playerElement.style.textAlign = "center"
+                                let nombre = prompt("Quien Es Capitan de Equipo Rosado? ");
+                                playerElement.innerText = nombre;
+                                playerElement.style.display = "h2";
+                                playerElement.style.textAlign = "center"
                         
-                //         }
-                //         capitanRosado();
+                        }
+                        capitanRosado();
 
 
 
