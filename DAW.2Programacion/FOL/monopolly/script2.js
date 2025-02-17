@@ -29,7 +29,10 @@ function incorrectoAlert(){
 let pIncorrecto = document.getElementById("pIncorrecto");
 let pCorrecto = document.getElementById("pCorrecto")
 // HEY
-// asagida yaptigimiz da cevap yerleri degisiyor ama orta soru kutucugu kayiyor onu duzeltmemizlazm
+// He intendado a usar un function de insertBefore para cada vez que utilizamos button random , cambia espacio de respuesta correcto , funciona pero no correctamente , 
+//esta modificando la pregunta tambien esto no queremos
+//si teneis algun otro idea para que cada vez cambiamos las respuestas se puede utilizar
+//no olvidar butones , no es suficiente cambiar respuesta hay que lleva butones tambien
 function cambiarlaPregunta(){
     let random = Math.floor(Math.random() * 1) + 1;
     if(random === 1){
@@ -40,7 +43,8 @@ function cambiarlaPregunta(){
         
         let parent = correcto.parentNode;
         parent.insertBefore(incorrecto , correcto)
-     }//  else if(random === 2){
+     }
+    //  else if(random === 2){
     //     pregunta.innerText = ("pregunta 3")
     //     pCorrecto.innerText = ("Respuesta correcta para pregunta  3");
     //     incorrecto.innerText = ("Respuesta incorrecta para pregunta 3");
@@ -81,15 +85,12 @@ function cambiarlaPregunta(){
     //     incorrecto.innerText = ("Respuesta incorrecta para pregunta 10");
     // }
     
-        // Butonları görünür yapma işlemi
-        correcto.style.display = "block"; // Doğru butonunu görünür yap
-        incorrecto.style.display = "block"; // Yanlış butonunu görünür yap
-        
-        // Varsayılan renkleri geri yükle
+  
+        // para cada vez que damos al random se cambia el color de fondo de lo que viene por defecto
         correcto.style.backgroundColor = "rgba(85, 85, 85, 0.925)";
         incorrecto.style.backgroundColor = "rgba(85, 85, 85, 0.925)";
         
-        // Resmi sıfırlayın
+        // para borrar el imagen 
         document.getElementById('photoss').style.display = 'none';
     
 }

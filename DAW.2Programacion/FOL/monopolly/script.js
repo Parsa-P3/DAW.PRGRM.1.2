@@ -1,5 +1,6 @@
 let valodado = document.getElementById("resultado");
 
+// function para dado
 function lanzardado() {
    
     let resultado = Math.floor(Math.random() * 8) + 1;
@@ -7,6 +8,7 @@ function lanzardado() {
     valodado.innerText = resultado;
 }
 
+// los capitanes
 let jg1 = document.getElementById("jg1");
 let jg2 = document.getElementById("jg2");
 let jg3 = document.getElementById("jg3");
@@ -14,7 +16,7 @@ let jg4 = document.getElementById("jg4");
 
 
 
-
+// function para pedir nombre de capitan
                 function capitanRojo(){
                 let playerElement = document.getElementById(`jg${1}`);
             
@@ -63,7 +65,7 @@ let jg4 = document.getElementById("jg4");
                         capitanRosado();
 
 
-
+// functiones para subir el salario (puntos)
 function anadirpuntoRojo(){
 
    let puntosRojos = document.getElementById("puntosRojo");
@@ -122,6 +124,7 @@ function anadirpuntoRosado(){
     }
 }
 
+// funciton para bajar el salario (quitar puntos)
 function eksiRojo(){
     let puntosRojos = document.getElementById("puntosRojo");
     let currentPoints = parseInt(puntosRojos.innerText); 
@@ -152,6 +155,8 @@ function eksiRosado(){
 
    
 }
+
+// function para cada vez abrir los preguntas en nueva pagina
 
 function x(){
     window.open("1.html", "_blank");
