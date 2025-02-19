@@ -7,16 +7,16 @@ public class Ionia extends Region {
 
     @Override
     public int bonusVida() {
-        return 60;
+        return 100;
     }
 
     @Override
     public int bonusAtaque() {
-        return 5;
+        return 50;
     }
 
     @Override
     public int bonusDefensa() {
-        return 20;
+        return 25;
     }
 }

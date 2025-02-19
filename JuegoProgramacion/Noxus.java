@@ -7,16 +7,16 @@ public class Noxus extends Region {
 
     @Override
     public int bonusVida() {
-        return 30;
+        return 50;
     }
 
     @Override
     public int bonusAtaque() {
-        return 25;
+        return 100;
     }
 
     @Override
     public int bonusDefensa() {
-        return 15;
+        return 25;
     }
 }

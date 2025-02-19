@@ -23,7 +23,14 @@ public abstract class Personaje {
         this.defensa += region.bonusDefensa();
     }
 
-    public abstract int atacar();
+    public void setVida(int ataque) {
+		this.vida = vida - ataque;
+		   if((this.vida) < 0) {
+			   this.vida=0;
+		   }
+	}
+
+	public abstract void atacar();
     public abstract int defender(int dano);
 
     public boolean estaVivo() {

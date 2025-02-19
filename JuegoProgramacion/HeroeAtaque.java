@@ -3,13 +3,13 @@ package TFP;
 public class HeroeAtaque extends Personaje{
 
     public HeroeAtaque(String nombre, Region region) {
-        super(nombre, 25, 10, 2, region);
+        super(nombre, 500, 100, 25, region);
     }
 
     @Override
-    public int atacar() {
-        System.out.println(nombre + " saldırıya geçti! Hasar: " + ataque);
-        return ataque;
+    public void atacar() {
+        System.out.println(nombre + " Atacado!");
+   
     }
 
     @Override
@@ -18,7 +18,7 @@ public class HeroeAtaque extends Personaje{
         if (recibido > 0) {
             vida -= recibido;
         }
-        System.out.println(nombre + " kendini savundu! Kalan can: " + vida);
+        System.out.println(nombre + " Defendio ! Vida restante:  " + vida);
         return vida;
     }
     
