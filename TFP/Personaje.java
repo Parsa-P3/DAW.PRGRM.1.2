@@ -1,14 +1,15 @@
 package TFP;
 
 public abstract class Personaje {
-    protected String nombre;
+    protected String nombreHeroe;
     protected int vida;
     protected int ataque;
     protected int defensa;
     protected Region region;
 
-    public Personaje(String nombre, int vida, int ataque, int defensa, Region region) {
-        this.nombre = nombre;
+    public Personaje( String nombre, int vida, int ataque, int defensa, Region region) {
+   
+        this.nombreHeroe = nombre;
         this.vida = vida;
         this.ataque = ataque;
         this.defensa = defensa;
@@ -30,7 +31,7 @@ public abstract class Personaje {
 		   }
 	}
 
-	public abstract int atacar();
+	public abstract void atacar();
     public abstract int defender(int dano);
 
     public boolean estaVivo() {
@@ -38,15 +39,21 @@ public abstract class Personaje {
     }
 
     public String getNombre() {
-        return nombre;
+        return nombreHeroe;
     }
 
-    public int getVida() {
+ 
+	public int getVida() {
         return vida;
     }
 
     @Override
     public String toString() {
-        return nombre + " con "+ vida + " HP , Ataque: " + ataque + ", Defensa: " + defensa  +  ". Su region : " + region.getNombre();
+        return nombreHeroe + " con "+ vida + " HP , Ataque: " + ataque + ", Defensa: " + defensa  +  ". Su region : " + region.getNombre();
     }
+  
+    
+
+
+	
 }

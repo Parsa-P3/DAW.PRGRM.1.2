@@ -13,4 +13,5 @@ public abstract class Region {
     public abstract int bonusVida();
     public abstract int bonusAtaque();
     public abstract int bonusDefensa();
+   
 }
