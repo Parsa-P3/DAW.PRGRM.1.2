@@ -14,10 +14,12 @@ public abstract class Personaje {
         this.ataque = ataque;
         this.defensa = defensa;
         this.region = region;
+        //aplicamos los bonuses de region a la hora de crear un personaje
         aplicarBonusRegion();
 
     }
     
+    // metodo para aplicar los bonus
     private void aplicarBonusRegion() {
         this.vida += region.bonusVida();
         this.ataque += region.bonusAtaque();
@@ -31,9 +33,12 @@ public abstract class Personaje {
 		   }
 	}
 
+    //metodos abstractos
 	public abstract void atacar();
     public abstract int defender(int dano);
+    public abstract int curar(Personaje Personaje1 , Personaje Personaje2);
 
+    //boolean para checkear si esta vivo
     public boolean estaVivo() {
         return vida > 0;
     }
@@ -51,6 +56,10 @@ public abstract class Personaje {
     public String toString() {
         return nombreHeroe + " con "+ vida + " HP , Ataque: " + ataque + ", Defensa: " + defensa  +  ". Su region : " + region.getNombre();
     }
+
+	public int getDefensa() {
+		return defensa;
+	}
   
     
 

@@ -21,5 +21,11 @@ public class HeroeAtaque extends Personaje{
         System.out.println(nombreHeroe + " Defendio ! Vida restante:  " + vida);
         return vida;
     }
+
+	@Override
+	public int curar(Personaje Personaje1 , Personaje Personaje2) {
+		System.out.println("esta habilidad no esta disponible !");
+		return 0;
+	}
     
 }
