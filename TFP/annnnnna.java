@@ -216,27 +216,13 @@ public class annnnnna {
 					          //////////////////////////////////////! Sistema de ataque !////////////////////////////////////////////////////////////
 					    
 					       int accion = 0;
-					       //verificacion de que si esta vivo;
-					       boolean vivo1 = true;
-					       boolean vivo2 = true;
-					       boolean vivo3 = true;
-					       boolean vivo4 = true;
-					       //verificacion de que si existe enemigo en vivo
-					       //si vivo es false no se puede seguir al juego y salimos del bucle
-					       boolean vivo = true;
-					   
-					       
+					          
 					       
 					       int TurnoDeJugar = 1;
 					       do {
 					
-					
-					        
-					      
-					        	
-					
 					       
-					        if(TurnoDeJugar == 1 && (vivo1)) {
+					        if(TurnoDeJugar == 1 ) {
 					        	  System.out.println("Turno para : " + nombreJugador1);
 					        	turno1.turnoQ(nombreJugador1);
 					        	 
@@ -253,10 +239,12 @@ public class annnnnna {
 					
 							 if(aQuien == 1) {
 								 
-								
-					
-								 TurnoDeJugar = turno1.vivo11(vivo, vivo2, vivo3, vivo4, vivo3, jugador3, TurnoDeJugar);
 								 turno1.atack(nombreJugador1, jugador1, jugador3, dondeAtacar, buscaEnMapjg3, mapjugador3);
+					
+								
+								 //dogru ornek , bunlarin hepsini boyle degistirmeliyiz
+								 TurnoDeJugar = turno1.v111(jugador2, jugador3, jugador4, TurnoDeJugar);
+								
 							
 								
 								
@@ -267,7 +255,7 @@ public class annnnnna {
 								 turno1.atack(nombreJugador1, jugador1, jugador4, dondeAtacar, buscaEnMapjg4, mapjugador4);
 							
 								 
-								 TurnoDeJugar =  turno1.vivo11(vivo, vivo2, vivo3, vivo4, vivo4, jugador4, TurnoDeJugar);
+								 TurnoDeJugar = turno1.v111(jugador2, jugador3, jugador4, TurnoDeJugar);
 								 }
 							 
 					        }else if(accion == 2){
@@ -276,14 +264,34 @@ public class annnnnna {
 					        		int aQuien = sc.nextInt();
 					        		if(aQuien == 1) {       		
 					        			jugador1.curar(jugador1, jugador1);
-					        			 TurnoDeJugar = 2;
+					        			 TurnoDeJugar = turno1.v111(jugador2, jugador3, jugador4, TurnoDeJugar);
 					        		}else if(aQuien == 2) {
 					        			jugador1.curar(jugador1, jugador2);
-					       			 TurnoDeJugar = 2;
+					        			 TurnoDeJugar = turno1.v111(jugador2, jugador3, jugador4, TurnoDeJugar);
 					        		}
 					        	
-					        } }
-							         if(TurnoDeJugar == 2 && (vivo2)) {
+					        }else if(accion ==3 ) {
+					        	if (jugador1.getPocion()>0) {
+					        	System.out.println("Para que quieres usar la pocion ");
+					        	System.out.println("Para mas poder! (1) ");
+					        	System.out.println("Para mas armadura!  (2) ");
+					        	int elegirPocion = sc.nextInt();
+					        	jugador1.poscion(jugador1, elegirPocion);
+					        	System.out.println(jugador1.toString());
+					        	System.out.println("pociones disponibles : " + jugador1.getPocion());
+					        	TurnoDeJugar = turno1.v111(jugador2, jugador3, jugador4, TurnoDeJugar);
+					        	 
+					        	
+					        	}else {
+					        		System.out.println("");
+					        		System.out.println("No me queda ningun pocion !");
+					        		System.out.println("");
+					        	}
+					        	}else {
+					        		System.out.println("Opcion no existe!");
+					        	}
+					        }
+							         if(TurnoDeJugar == 2) {
 							        	 System.out.println("Turno para : " + nombreJugador2);
 								        	turno1.turnoQ(nombreJugador2);
 							               accion = sc.nextInt();
@@ -298,14 +306,15 @@ public class annnnnna {
 							   		 
 							   		 if(aQuien == 1 ) {
 							   			 turno1.atack(nombreJugador2, jugador2, jugador3, dondeAtacar, buscaEnMapjg3, mapjugador3);
-					
-							   			TurnoDeJugar =  turno1.vivo2(vivo, vivo3, vivo4, vivo3, jugador3, TurnoDeJugar);
+							   			 
+							   			TurnoDeJugar = turno1.v222(jugador3, jugador4, TurnoDeJugar);
+							   			
 										 
 							   		 }
 							   		 if(aQuien == 2 ) {
 							   			 turno1.atack(nombreJugador2, jugador2, jugador4, dondeAtacar, buscaEnMapjg4, mapjugador4);
 					
-							   			TurnoDeJugar =  turno1.vivo2(vivo, vivo3, vivo4, vivo4 , jugador4, TurnoDeJugar);
+							   			TurnoDeJugar = turno1.v222(jugador3, jugador4, TurnoDeJugar);
 							   		 }
 								}
 							                     // bucle de curar para jugador 2
@@ -315,14 +324,34 @@ public class annnnnna {
 							        		int aQuien = sc.nextInt();
 							        		if(aQuien == 1) {
 							        			jugador2.curar(jugador2, jugador2);
-							        			TurnoDeJugar =  turno1.vivo2(vivo, vivo3, vivo4, vivo3, jugador3, TurnoDeJugar);
+							        			TurnoDeJugar = turno1.v222(jugador3, jugador4, TurnoDeJugar);
 							        			 
 							        		}else if(aQuien == 2) {
 							        			jugador2.curar(jugador2, jugador1);
-							        			TurnoDeJugar =  turno1.vivo2(vivo, vivo3, vivo4, vivo3, jugador3, TurnoDeJugar);
+							        			TurnoDeJugar = turno1.v222(jugador3, jugador4, TurnoDeJugar);
 							        		}
-							         }// bucle de jugador 3
-							         }  if(TurnoDeJugar == 3 && (vivo3)) {
+							         }else if(accion ==3) {
+							        	 if (jugador2.getPocion()>0) {
+								        	System.out.println("Para que quieres usar la pocion ");
+								        	System.out.println("Para mas poder! (1) ");
+								        	System.out.println("Para mas armadura!  (2) ");
+								        	int elegirPocion = sc.nextInt();
+								        	jugador2.poscion(jugador2, elegirPocion);
+								        	System.out.println(jugador2.toString());
+								        	System.out.println("pociones disponibles : " + jugador2.getPocion());
+								        	TurnoDeJugar = turno1.v222(jugador3, jugador4, TurnoDeJugar);
+								        	
+								        	}else {
+								        		System.out.println("");
+								        		System.out.println("No me queda ningun pocion !");
+								        		System.out.println("");
+								        	}
+							        	 }
+							         else {
+								        		System.out.println("Opcion no existe!");
+								        	}// bucle de jugador 3
+							                     
+							         }  if(TurnoDeJugar == 3 ) {
 							        	 System.out.println("Turno para : " + nombreJugador3);
 								        	turno1.turnoQ(nombreJugador3);
 							               accion = sc.nextInt();
@@ -338,30 +367,47 @@ public class annnnnna {
 										   			 turno1.atack( nombreJugador3,jugador3, jugador1, dondeAtacar, buscaEnMapjg1, mapjugador1);
 					
 										   		
-										   			TurnoDeJugar = 	turno1.vivo3(vivo, vivo4, vivo1, vivo1, jugador1, TurnoDeJugar);
-										   			
+										   		
+										   			TurnoDeJugar = 	turno1.v333(jugador4, jugador1, jugador2, TurnoDeJugar);
 										   			 
 										   		 }
 										   		 if(aQuien == 2) {
 										   			 turno1.atack( nombreJugador3, jugador3, jugador2, dondeAtacar, buscaEnMapjg2, mapjugador2);
 					
-										   			TurnoDeJugar = 	turno1.vivo3(vivo, vivo4, vivo1, vivo2, jugador2, TurnoDeJugar);
+										   			TurnoDeJugar = 	turno1.v333(jugador4, jugador1, jugador2, TurnoDeJugar);
 										   		 }
 					 }
 							                       else if(accion == 2) {
 								        		System.out.println("A quien quieres curar " + nombreJugador3 + "?") ;
-								        		turno1.posiblesAtaces(" ti mismo ", nombreJugador3, jugador3, jugador4);
+								        		turno1.posiblesAtaces(" ti mismo ", nombreJugador4, jugador4, jugador3);
 								        		int aQuien = sc.nextInt();
 								        		if(aQuien == 1) {
 								        			jugador3.curar(jugador3, jugador3);
-								        			TurnoDeJugar =  turno1.vivo3(vivo, vivo4, vivo1, vivo1, jugador1, TurnoDeJugar);
+								        			TurnoDeJugar = 	turno1.v333(jugador4, jugador1, jugador2, TurnoDeJugar);
 								        			 
 								        		}else if(aQuien == 2) {
-								        			jugador3.curar(jugador4, jugador3);
-								        			TurnoDeJugar =  turno1.vivo3(vivo, vivo4, vivo1, vivo1, jugador1, TurnoDeJugar);
+								        			jugador3.curar(jugador3, jugador4);
+								        			TurnoDeJugar = 	turno1.v333(jugador4, jugador1, jugador2, TurnoDeJugar);
 								        		}
-							         }
-							         }	   	   if((TurnoDeJugar == 4) && (vivo4)) {
+							         }else if(accion ==3) {
+							        	 if (jugador3.getPocion()>0) {
+								        	System.out.println("Para que quieres usar la pocion ");
+								        	System.out.println("Para mas poder! (1) ");
+								        	System.out.println("Para mas armadura!  (2) ");
+								        	int elegirPocion = sc.nextInt();
+								        	jugador3.poscion(jugador3, elegirPocion);
+								        	System.out.println(jugador3.toString());
+								        	System.out.println("pociones disponibles : " + jugador3.getPocion());
+								        	TurnoDeJugar = 	turno1.v333(jugador4, jugador1, jugador2, TurnoDeJugar);
+							        	 }else {
+							        			System.out.println("");
+								        		System.out.println("No me queda ningun pocion !");
+								        		System.out.println("");
+							        	 }
+								        	}else {
+								        		System.out.println("Opcion no existe!");
+								        	}
+							         }	   	   if((TurnoDeJugar == 4) ) {
 							        	 System.out.println("Turno para : " + nombreJugador4);
 								        	turno1.turnoQ(nombreJugador4);
 							               accion = sc.nextInt();
@@ -376,29 +422,47 @@ public class annnnnna {
 														   		 
 														   		 if(aQuien == 1) {
 														   			 turno1.atack(nombreJugador4 , jugador4, jugador1, dondeAtacar, buscaEnMapjg1, mapjugador1);
-					
-														   			TurnoDeJugar =  turno1.vivo4(vivo, vivo1, vivo2, vivo1, jugador1, TurnoDeJugar);
+														   			TurnoDeJugar = turno1.v444(jugador1, jugador2, TurnoDeJugar);
+														   			
 														   		 }
 														   		 if(aQuien == 2) {
 														   			 turno1.atack( nombreJugador4 , jugador4, jugador2, dondeAtacar, buscaEnMapjg2, mapjugador2);
 					//									   		
-														   			TurnoDeJugar =  turno1.vivo4(vivo, vivo1, vivo2, vivo2, jugador4, TurnoDeJugar);
+														   			TurnoDeJugar = turno1.v444(jugador1, jugador2, TurnoDeJugar);
 														   		 }} else if(accion == 2) {
 														        		System.out.println("A quien quieres curar " + nombreJugador4 + "?") ;
-														        		turno1.posiblesAtaces(" ti mismo ", nombreJugador4, jugador4, jugador3);
+														        		turno1.posiblesAtaces(" ti mismo ", nombreJugador3, jugador3, jugador4);
 														        		int aQuien = sc.nextInt();
 														        		if(aQuien == 1) {
 														        			jugador4.curar(jugador4, jugador4);
-														        			TurnoDeJugar = turno1.vivo4(vivo, vivo1, vivo2, vivo1, jugador1, TurnoDeJugar);
+														        			TurnoDeJugar = turno1.v444(jugador1, jugador2, TurnoDeJugar);
 														        			 
 														        		}else if(aQuien == 2) {
-														        			jugador4.curar(jugador3, jugador4);
-														        			TurnoDeJugar =  turno1.vivo4(vivo, vivo1, vivo2, vivo1, jugador1, TurnoDeJugar);
+														        			jugador4.curar(jugador4, jugador3);
+														        			TurnoDeJugar = turno1.v444(jugador1, jugador2, TurnoDeJugar);
 														        		}
-													         }
+													         }else if(accion ==3) {
+													        	 if (jugador3.getPocion()>0) {
+														        	System.out.println("Para que quieres usar la pocion ");
+														        	System.out.println("Para mas poder! (1) ");
+														        	System.out.println("Para mas armadura!  (2)");
+														        	int elegirPocion = sc.nextInt();
+														        	jugador4.poscion(jugador4, elegirPocion);
+														        	System.out.println("Pocion usado correctamente");
+														        	System.out.println(jugador4.toString());
+														        	System.out.println("pociones disponibles : " + jugador4.getPocion());
+														        	TurnoDeJugar = turno1.v444(jugador1, jugador2, TurnoDeJugar);
+													        	 }else {
+													        			System.out.println("");
+														        		System.out.println("No me queda ningun pocion !");
+														        		System.out.println("");
+													        	 }
+														        	}else {
+														        		System.out.println("Opcion no existe!");
+														        	}
 					
-											}}while(vivo);
-					   
+											}}while(!(TurnoDeJugar == 0));
+			
 					      if(jugador1.getVida()+jugador2.getVida()> jugador3.getVida() + jugador4.getVida()) {
 					    	  System.out.println("HA GANDO EL EQUIPO 1");
 					    	  turno1.winner();

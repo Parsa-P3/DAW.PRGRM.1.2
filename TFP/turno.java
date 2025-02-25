@@ -7,22 +7,27 @@ public class turno {
 	protected Personaje jugador1;
 	protected Personaje jugador2;
 	
+	// HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+	//cons de turno
 	public turno(Personaje jugador1, Personaje jugador2) {
 		this.jugador1 = jugador1;
 		this.jugador2 = jugador2;
 	}
 	
 	
+	//menu opciones de juego 
 	public void turnoQ(String  z ) {
 		System.out.println("Elige uno de los opciones " + z +" :");
 		
          	System.out.println("Atacar (1)");
          	System.out.println("Curar (2)");
+         	System.out.println("Usa pocion de efecto(3)");
          
          
 		
 	}
 	
+	//metodo para mostrar regiones
 	public void EligeRegion(String x ){
 	     System.out.println("");
 	        System.out.println("");
@@ -43,6 +48,7 @@ public class turno {
         
 		
     }
+	// mostrar confirmacion de heroes
 	public void mostrarHeroes(Personaje a ,Personaje b ,Personaje c ,Personaje d , String aa ,  String bb,  String cc,  String dd ) {
 		  System.out.println("");
 		  System.out.println("___________________________________________");
@@ -54,6 +60,7 @@ public class turno {
 		  System.out.println("");
 	}
 	
+	// metodo mostrar heroes
 	public void EligeHeroe(int RegionElegido) {
         System.out.println("🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️");
         System.out.println("🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️");
@@ -73,22 +80,23 @@ public class turno {
           System.out.println("ºElige el tipo de heroe :");
           System.out.println();
           System.out.println("⚔️ ⚔️ ⚔️ ⚔️ ⚔️ ⚔️ ⚔️ ⚔️ ⚔️ ⚔️ ⚔️ ⚔️ ⚔️ ⚔️ ⚔️");
-          System.out.println("1 - Yasuo (25 HP - 10 DAMAGE - 2 ARMOR)");
+          System.out.println("1 - Yasuo (1000 HP - 100 DAMAGE - 25 ARMOR)");
           System.out.println("");
           System.out.println("🏹 🧙 🏹 🧙 🏹 🏹 🧙 🏹 🧙 🏹 🏹 🧙 🏹 🧙 🏹");
-          System.out.println("2 - Lux (40 HP - 2 DAMAGE - 10 ARMOR)");
+          System.out.println("2 - Lux (1000 HP - 25 DAMAGE - 100 ARMOR)");
 
 	}else if (RegionElegido == 2) {
         System.out.println("ºElige el tipo de heroe :");
         System.out.println("");
         System.out.println("🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️");
-        System.out.println("1 - Katarina (25 HP - 10 DAMAGE - 2 ARMOR)");
+        System.out.println("1 - Katarina (500 HP - 100 DAMAGE - 25 ARMOR)");
         System.out.println("");
         System.out.println("🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️");
-        System.out.println("2 - Darius (40 HP - 2 DAMAGE - 10 ARMOR)");
+        System.out.println("2 - Darius (500 HP - 25 DAMAGE - 100 ARMOR)");
 	}
 	}
 	
+	// metodo mostrar la mapa para cada jugador
 	public void EligeMap(String Personaje) {
 		System.out.println("");
           System.out.println("🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️");
@@ -111,6 +119,7 @@ public class turno {
           System.out.println("|_________|_______________|_________|");
 	}
 	
+	// metodo spam para ocultar textos o pasos anteriores
 	public void spam() {
         System.out.println("🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️ 🗡️");
         System.out.println("🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️");
@@ -126,6 +135,7 @@ public class turno {
         System.out.println("🏹 🧙 🏹 🧙 🏹 🏹 🧙 🏹 🧙 🏹 🏹 🧙 🏹 🧙 🏹 🧙");
 	}
 	
+	// metodo ASCII para empezar
 	public void start() {
 		System.out.println(" (                     (            \r\n"
 				+ " )\\ )  *   )    (      )\\ )  *   )  \r\n"
@@ -137,6 +147,7 @@ public class turno {
 				+ "|___/  |_|    /_/ \\_\\ |_|_\\  |_|    \r\n"
 				+ "                                    ");
 	}
+	// metodo ASCII para ganador
 	public void winner() {
 		System.out.println("           (        )     )       (     \r\n"
 				+ " (  (      )\\ )  ( /(  ( /(       )\\ )  \r\n"
@@ -149,26 +160,47 @@ public class turno {
 				+ "                                        ");
 	}
 	
-	
+	// metodo de atacar y aplicacion de sus efectos
 	public void atack(String nombreJugadorAt , Personaje atacante , Personaje RecibirAtace , int dondeatacar , int mapa2 , Map mapa ) {
 
 		if(dondeatacar == mapa2) {
-			atacante.atacar();
-				
-				int anteAtaque = RecibirAtace.getVida();
+			// aunque lo marca correctamente en mapa si el heroe en dicha posicion no esta vivo 
+			// mostrara que no hay nadie aqui!
+			if(RecibirAtace.getVida()<1) {
+				System.out.println("    ______    _______    ________  \r\n"
+						+ "   /    \" \\  |   __ \"\\  /\"       ) \r\n"
+						+ "  // ____  \\ (. |__) :)(:   \\___/  \r\n"
+						+ " /  /    ) :)|:  ____/  \\___  \\    \r\n"
+						+ "(: (____/ // (|  /       __/  \\\\   \r\n"
+						+ " \\        / /|__/ \\     /\" \\   :)  \r\n"
+						+ "  \\\"_____/ (_______)   (_______/   \r\n"
+						+ "                                   ");
+				System.out.println("En esta posicion no hay nadie !!");
+				System.out.println("");
+			}else {
+				// metodo de aplicacion de ataque con sus efectos
+				System.out.println("");
+			System.out.println("");
+			   System.out.println(" (        )   (      (        )   (      (        )   (     \r\n"
+				   		+ " )\\ )  ( /(   )\\ )   )\\ )  ( /(   )\\ )   )\\ )  ( /(   )\\ )  \r\n"
+				   		+ "(()/(  )\\()) (()/(  (()/(  )\\()) (()/(  (()/(  )\\()) (()/(  \r\n"
+				   		+ " /(_))((_)\\   /(_))  /(_))((_)\\   /(_))  /(_))((_)\\   /(_)) \r\n"
+				   		+ "(_))    ((_) (_))   (_))    ((_) (_))   (_))    ((_) (_))   \r\n"
+				   		+ "/ __|  / _ \\ / __|  / __|  / _ \\ / __|  / __|  / _ \\ / __|  \r\n"
+				   		+ "\\__ \\ | (_) |\\__ \\  \\__ \\ | (_) |\\__ \\  \\__ \\ | (_) |\\__ \\  \r\n"
+				   		+ "|___/  \\___/ |___/  |___/  \\___/ |___/  |___/  \\___/ |___/  \r\n"
+				   		+ "                                                            ");
+			   atacante.atacar();
+			   
+		
+			//para poder localizar en mapa el jugador tenemos que obtener la vida antes de que recibe el ataque	
+			int anteAtaque = RecibirAtace.getVida();
 			RecibirAtace.defender(atacante.ataque);
 			int vidaActual = RecibirAtace.getVida();
 	
+			//colocamos el heroe otra vez en mapa sin cambiar su posicion pero con su vida nueva
 			mapa.placePlayer(anteAtaque,vidaActual);
-			   System.out.println(" (        )   (      (        )   (      (        )   (     \r\n"
-			   		+ " )\\ )  ( /(   )\\ )   )\\ )  ( /(   )\\ )   )\\ )  ( /(   )\\ )  \r\n"
-			   		+ "(()/(  )\\()) (()/(  (()/(  )\\()) (()/(  (()/(  )\\()) (()/(  \r\n"
-			   		+ " /(_))((_)\\   /(_))  /(_))((_)\\   /(_))  /(_))((_)\\   /(_)) \r\n"
-			   		+ "(_))    ((_) (_))   (_))    ((_) (_))   (_))    ((_) (_))   \r\n"
-			   		+ "/ __|  / _ \\ / __|  / __|  / _ \\ / __|  / __|  / _ \\ / __|  \r\n"
-			   		+ "\\__ \\ | (_) |\\__ \\  \\__ \\ | (_) |\\__ \\  \\__ \\ | (_) |\\__ \\  \r\n"
-			   		+ "|___/  \\___/ |___/  |___/  \\___/ |___/  |___/  \\___/ |___/  \r\n"
-			   		+ "                                                            ");
+			
 	           System.out.println("Daño realizado :");
 	           System.out.println("---> " + ( RecibirAtace.defensa - atacante.ataque));
 	           System.out.println("Daño bloqueado : ");
@@ -178,8 +210,9 @@ public class turno {
 	           System.out.println("🏹 🧙   FIN DEL TURNO PARA "+ nombreJugadorAt+"! 🏹 🧙");
 	           System.out.println("🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️ 🛡️ ⚒️");
 	           System.out.println("");
-	           System.out.println("");
+	           System.out.println("");}
 		}else {
+			// si en dicha posicion no hay ningun heroe :
 			System.out.println("    ______    _______    ________  \r\n"
 					+ "   /    \" \\  |   __ \"\\  /\"       ) \r\n"
 					+ "  // ____  \\ (. |__) :)(:   \\___/  \r\n"
@@ -192,6 +225,7 @@ public class turno {
 		}
 	}
 
+	// menu de posibles ataques para verificar si el enemigo vive antes que atacar!
 	public void posiblesAtaces(String p1 , String p2 , Personaje Personaje1 , Personaje Personaje2) {
 		if(Personaje1.getVida()>0) {
 		System.out.println("A " + p1 + " (1)");}
@@ -202,72 +236,50 @@ public class turno {
 	}
 
 
-	public int vivo11(boolean vivog , boolean vivoP , boolean vivoS , boolean vivot , boolean vivor , Personaje Personaje , int turno) {
-		if(Personaje.getVida()<1) {
-			vivor = false;
-		}
-		
-		if(vivoP) {
+	// para pasar el turno uno a otro jugador mientras enemigo esta vivo (!turno=0) y que va con el orden (1->2->3->4)
+	public int v111(Personaje primer , Personaje seg , Personaje terc , int turno) {
+		if(primer.getVida()>0){
 			turno = 2;
-		}else if(vivoS) {
+		}else if(seg.getVida()>0) {
 			turno = 3;
-		}else if(vivot) {
+		}else if(terc.getVida()>0) {
+			turno = 4;
+		}else{
+			turno = 0;
+		}return turno;
+	}
+	public int v222(Personaje primer , Personaje seg , int turno) {
+		if(primer.getVida()>0) {
+			turno = 3;
+		}else if(seg.getVida()>0) {
 			turno = 4;
 		}else {
-			vivog = false;
-		}
-		return turno;
+			turno = 0;
+		}return turno;
+	}
+	public int v333(Personaje primer , Personaje seg , Personaje terc , int turno) {
+		if(primer.getVida()>0){
+			turno = 4;
+		}else if(seg.getVida()>0) {
+			turno = 1;
+		}else if(terc.getVida()>0) {
+			turno = 2;
+		}else{
+			turno = 0;
+		}return turno;
+	}
+	public int v444(Personaje primer , Personaje seg , int turno) {
+		if(primer.getVida()>0) {
+			turno = 1;
+		}else if(seg.getVida()>0) {
+			turno = 2;
+		}else {
+			turno = 0;
+		}return turno;
 	}
 	
-	public int vivo2(boolean vivo ,boolean vivo3 , boolean vivo4, boolean vivoS , Personaje Personaje1 , int turno) {
-		if(Personaje1.getVida()<1) {
-			vivoS = false;
-			vivo4 = vivoS ;
-		}
-		
-		 if(vivo3) {
-			turno = 3;
-		}else if(vivo4) {
-			turno = 4;
-		}else {
-			vivo = false;
-		}
-		
-			return turno;
-	}
+	
 
-     public int vivo3(boolean vivoGeneral , boolean primerOp , boolean SegundoOp , boolean elQueRecibe, Personaje Personaje , int turno) {
-		if(Personaje.getVida()<1) {
-			elQueRecibe = false;
-		}
-		
-		if(primerOp) {
-			turno = 4;
-		}else if(SegundoOp) {
-			turno = 1;
-		}else if(elQueRecibe) {
-			turno = 2;
-		}else {
-			vivoGeneral = false;
-		}
-		return turno;
-	}
-     
-     public int vivo4(boolean vivoGeneral , boolean P , boolean S , boolean R , Personaje Personaje , int turno ) {
-    	 if(Personaje.getVida()<1) {
-    		 R = false;
-    	 }
-    	 
-    	 if(P) {
-    		 turno = 1;
-    	 }else if(S) {
-    		 turno = 2;
-    	 }else {
-    		 vivoGeneral = false;
-    	 }
-    		return turno;
-     }
-     
 	
 	
 }
