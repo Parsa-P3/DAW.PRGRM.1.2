@@ -5,11 +5,13 @@ public abstract class Personaje {
     protected int vida;
     protected int ataque;
     protected int defensa;
+    protected int pocion;
     protected Region region;
 
-    public Personaje( String nombre, int vida, int ataque, int defensa, Region region) {
+    public Personaje( String nombre, int vida, int ataque, int defensa,int pocion , Region region) {
    
         this.nombreHeroe = nombre;
+        this.pocion = pocion;
         this.vida = vida;
         this.ataque = ataque;
         this.defensa = defensa;
@@ -37,6 +39,7 @@ public abstract class Personaje {
 	public abstract void atacar();
     public abstract int defender(int dano);
     public abstract int curar(Personaje Personaje1 , Personaje Personaje2);
+    public abstract int poscion(Personaje Personaje  , int x);
 
     //boolean para checkear si esta vivo
     public boolean estaVivo() {
@@ -60,7 +63,24 @@ public abstract class Personaje {
 	public int getDefensa() {
 		return defensa;
 	}
-  
+
+	public int getPocion() {
+		return pocion;
+	}
+
+	public void setPocion(int pocion) {
+		this.pocion = pocion;
+	}
+
+	public int getAtaque() {
+		return ataque;
+	}
+
+	public void setAtaque(int ataque) {
+		this.ataque = ataque;
+	}
+
+	
     
 
 
