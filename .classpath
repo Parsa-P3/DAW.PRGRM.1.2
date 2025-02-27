@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="DAW.2Programacion/|DAW.2Programacion/pooAvanzadaIII/|DAW.2Programacion/repasoPOO/|DAW.2Programacion/poo/|DAW.2Programacion/poolimorfismo1/" kind="src" path=""/>
+	<classpathentry excluding="pooAvanzadaIII/|repasoPOO/|poo/|poolimorfismo1/" kind="src" path="DAW.2Programacion"/>
+	<classpathentry kind="src" path="DAW.2Programacion/poo"/>
+	<classpathentry kind="src" path="DAW.2Programacion/pooAvanzadaIII"/>
+	<classpathentry kind="src" path="DAW.2Programacion/poolimorfismo1"/>
+	<classpathentry kind="src" path="DAW.2Programacion/repasoPOO"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
