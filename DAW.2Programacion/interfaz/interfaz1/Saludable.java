@@ -1,4 +1,4 @@
-package interfaz1;
+package interfaz.interfaz1;
 
 public interface Saludable {
 

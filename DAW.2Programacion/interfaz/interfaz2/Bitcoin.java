@@ -1,4 +1,4 @@
-package interfaz2;
+package interfaz.interfaz2;
 
 public class Bitcoin extends Pago{
 

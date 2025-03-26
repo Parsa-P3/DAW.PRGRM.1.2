@@ -1,4 +1,4 @@
-package interfaz3;
+package interfaz.interfaz3;
 
 public class CocheElectrico extends  Coche implements IElectrico{
 
