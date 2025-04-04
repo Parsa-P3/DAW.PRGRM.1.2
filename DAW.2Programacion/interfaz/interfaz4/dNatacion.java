@@ -1,4 +1,4 @@
-package interfaz.interfaz4;
+package interfaz4;
 
 public class dNatacion extends deporteIndividual{
     

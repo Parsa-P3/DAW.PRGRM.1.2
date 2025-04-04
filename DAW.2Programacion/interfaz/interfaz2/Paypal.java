@@ -1,4 +1,4 @@
-package interfaz.interfaz2;
+package interfaz2;
 
 import java.util.Scanner;
 

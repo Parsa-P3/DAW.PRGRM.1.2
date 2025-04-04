@@ -1,4 +1,4 @@
-package interfaz.interfaz4;
+package interfaz4;
 
 import java.util.Scanner;
 
@@ -7,84 +7,79 @@ public class AppDeporte {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        dVoleibol equipoVoleybol1 = new dVoleibol("Pedro", "Ziraat lig", "Besiktas", 84);
-        dVoleibol equipoVoleybol2 = new dVoleibol("Marco", "Ziraat lig", "Fenerbahce", 81);
-        dVoleibol equipoVoleybol3 = new dVoleibol("Alex", "La Liga", "Real Madrid", 88);
-        dVoleibol equipoVoleybol4 = new dVoleibol("Muller", "La liga", "Bayern Munich", 87);
+        String[] estadios = {"Estambul", "Ankara", "Madrid", "Berlin"};
 
-        
-
-        String stad1 = "Estambul" ;
-        String stad2 = "Ankara" ;
-        String stad3 = "Madrid" ;
-        String stad4 = "Berlin" ;
 
         System.out.println(" * Bienvenido al sistema de organizacion de eventos deportivos *");
-        System.out.println(" * A cual de los deportes quereis añadir evento :");
-        System.out.println(" * Voleibol (1)");
-        System.out.println(" * Futbol   (2)");
-        System.out.println(" * ");
-        System.out.println(" * ");
-        System.out.println(" * ");
-        System.out.println(" * ");
-        System.out.println(" * ");
-        int ElegirDeporte = scanner.nextInt();
+        System.out.println(" * Porfavor elegir uno de los opciones : *");
+        System.out.println("- Deporte Equipo (1)");
+        System.out.println("- Deporte Individual (2)");
+        int tipo = scanner.nextInt();
+        if (tipo == 1) {
+                    
+                
+                System.out.println(" * A cual de los deportes quereis añadir evento :");
+                System.out.println(" * Voleibol (1)");
+                System.out.println(" * Futbol   (2)");
+                int ElegirDeporte = scanner.nextInt();
 
-        if(ElegirDeporte == 1){
-            System.out.println(" * Lista de equipos ");
-            System.out.println(" -- " + equipoVoleybol1.toString());
-            System.out.println(" -- " + equipoVoleybol2.toString());
-            System.out.println(" -- " + equipoVoleybol3.toString());
-            System.out.println(" -- " + equipoVoleybol4.toString());
+                dVoleibol[] equiposVoleibol = {
+                    new dVoleibol("Pedro", "Ziraat lig", "Besiktas", 84),
+                    new dVoleibol("Marco", "Ziraat lig", "Fenerbahce", 81),
+                    new dVoleibol("Alex", "La Liga", "Real Madrid", 88),
+                    new dVoleibol("Muller", "La liga", "Bayern Munich", 87)
+                };
 
+                dFutbol[] equiposFutbol = {
+                    new dFutbol("Ronaldo", "Premier League", "Manchester United", 92),
+                    new dFutbol("Messi", "Ligue 1", "PSG", 94),
+                    new dFutbol("Neymar", "Ligue 1", "Barcelona", 89),
+                    new dFutbol("Benzema", "La Liga", "Real Madrid", 90)
+                };
 
-            System.out.println(" Elegir primer equipo : ");
-            int eq1 = scanner.nextInt();
-            dVoleibol Voley1 = null;
-            if(eq1 == 1){
-                Voley1 = equipoVoleybol1 ;
-            }else if (eq1 == 2){
-                Voley1 = equipoVoleybol2 ;
-            }else if (eq1 == 3){
-                Voley1 = equipoVoleybol3 ;
-            }else if (eq1 == 4){
-                Voley1 = equipoVoleybol4 ;
-            }
+                deporteEquipo[] equipo_selecionado = null ;
 
-            System.out.println(" Elegir el segundo equipo : ");
-            int eq2 = scanner.nextInt();
-            dVoleibol Voley2 = null;
-            if(eq1 == eq2){
-                System.out.println("ERROR!");
-            }else if(eq2 == 1){
-                Voley2 = equipoVoleybol1 ;
-            }else if (eq2 == 2){
-                Voley2 = equipoVoleybol2 ;
-            }else if (eq2 == 3){
-                Voley2 = equipoVoleybol3 ;
-            }else if (eq2 == 4){
-                Voley2 = equipoVoleybol4 ;
-            }
+                //HEMOS DEJADO AQUI ! 27/03/2025
+                equiposVoleibol[0].ReglasVoleibol();
 
-            System.out.println("Elegir el stadyum : ");
-            System.out.println(stad1 +" (1)");
-            System.out.println(stad2 +" (2)");
-            System.out.println(stad3 +" (3)");
-            System.out.println(stad4 +" (4)");
+                if (ElegirDeporte == 1){
+                    equipo_selecionado = equiposVoleibol ;
+                }else if(ElegirDeporte == 2){
+                    equipo_selecionado = equiposFutbol ;
+                }else{
+                    System.out.println("Opcion invalido!");
+                }
 
-            int stad = scanner.nextInt();
-            String stadyum = "";
-            if(stad == 1){
-                stadyum = stad1 ;
-            }else if (stad == 2){
-                stadyum = stad2 ;
-            }else if (stad == 3){
-                stadyum = stad3 ;
-            }else if (stad == 4){
-                stadyum = stad4 ;
-            }
+                System.out.println(" * Lista de equipos ");
+                for (int i = 0; i < equipo_selecionado.length; i++) {
+                    System.out.println((i + 1) + " -- " + equipo_selecionado[i].toString());
+                }
 
-            equipoVoleybol1.competicionDeporteEquipo(Voley1, Voley2, stadyum);
-        }
+                System.out.println(" Elegir primer equipo : ");
+                int eq1 = scanner.nextInt()  - 1;
+                System.out.println(" Elegir el segundo equipo : ");
+                int eq2 = scanner.nextInt() - 1;
+
+                if (eq1 == eq2 || eq1 < 0 || eq2 < 0 || eq1 >= equipo_selecionado.length || eq2 >= equipo_selecionado.length) {
+                    System.out.println("ERROR! Equipos no válidos.");
+                    return;
+                }
+
+                System.out.println("Elegir el estadio: ");
+                for (int i = 0; i < estadios.length; i++) {
+                    System.out.println((i + 1) + " - " + estadios[i]);
+                }
+
+                int stad = scanner.nextInt() - 1;
+                if (stad < 0 || stad >= estadios.length) {
+                    System.out.println("ERROR! Estadio no válido.");
+                    return;
+                }
+
+                equipo_selecionado[eq1].competicionDeporteEquipo(equipo_selecionado[eq1], equipo_selecionado[eq2], estadios[stad]);
+                
+    }else if(tipo == 2){
+
+    }
     }
 }

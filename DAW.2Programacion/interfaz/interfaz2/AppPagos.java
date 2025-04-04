@@ -1,4 +1,4 @@
-package interfaz.interfaz2;
+package interfaz2;
 
 public class AppPagos {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package interfaz.interfaz4;
+package interfaz4;
 
-public class dFutbol extends deporteEquipo{
+public class dFutbol extends balon{
     
     
     
@@ -18,6 +18,20 @@ public class dFutbol extends deporteEquipo{
                         "Faltas y tarjetas – Las infracciones pueden sancionarse con tiro libre, penalti, tarjeta amarilla (advertencia) o tarjeta roja (expulsión).\n" + //
                         "\n" + //
                         "Balón en juego o fuera de juego – El balón solo se considera fuera de juego cuando ha cruzado completamente las líneas de banda o gol.");
+                        
+
         ReglasGenerales();
     }
+
+    
+    @Override
+    public String toString() {
+        return "Nombre de Equipo : " + nombreEquipo + " . Rankig : " + rankEquipo;
+    }
+    
+    @Override
+    public void metod1(deporteEquipo x) {
+        super.metod1(x);
+    }
+
 }

@@ -1,4 +1,4 @@
-package interfaz.interfaz4;
+package interfaz4;
 
 interface  ReglasComunes {
     

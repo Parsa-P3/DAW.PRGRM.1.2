@@ -1,6 +1,6 @@
-package interfaz.interfaz4;
+package interfaz4;
 
-public class dVoleibol extends deporteEquipo{
+public class dVoleibol extends balon{
 
  
     public dVoleibol(String entrenador, String liga, String nombreEquipo, int rankEquipo) {
@@ -25,6 +25,10 @@ public class dVoleibol extends deporteEquipo{
             return "Nombre de Equipo : " + nombreEquipo + " . Rankig : " + rankEquipo;
         }
 
+        @Override
+        public void metod1(deporteEquipo x) {
+            System.out.println("Voleibol se juega con balon");
+        }
     
    
 }

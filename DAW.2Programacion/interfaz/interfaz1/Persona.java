@@ -1,4 +1,4 @@
-package interfaz.interfaz1;
+package interfaz1;
 
 public class Persona implements Saludable{
 

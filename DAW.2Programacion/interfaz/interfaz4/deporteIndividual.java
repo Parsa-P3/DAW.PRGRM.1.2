@@ -1,4 +1,4 @@
-package interfaz.interfaz4;
+package interfaz4;
 
 abstract class deporteIndividual implements ReglasComunes{
     public String Entrenador;

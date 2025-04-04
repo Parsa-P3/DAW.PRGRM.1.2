@@ -1,4 +1,4 @@
-package interfaz.interfaz2;
+package interfaz2;
 
 public abstract class Pago implements MetodoPago {
     private double saldoDisponible;

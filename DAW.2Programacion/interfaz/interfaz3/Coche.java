@@ -1,4 +1,4 @@
-package interfaz.interfaz3;
+package interfaz3;
 
 public class Coche implements IVehiculo , IModoDeportivo{
     private String marca ;

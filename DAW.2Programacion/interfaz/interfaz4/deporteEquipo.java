@@ -1,4 +1,4 @@
-package interfaz.interfaz4;
+package interfaz4;
 
 abstract class deporteEquipo implements ReglasComunes{
     public String Entrenador;
@@ -31,11 +31,37 @@ abstract class deporteEquipo implements ReglasComunes{
                 random = (int)(Math.random()*8)+1;
             }
         }
-        if(random % 2 == 0){
+        System.out.println(" ");
+        System.out.println("Resultado en 3...");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println(" ");
+        System.out.println("Resultado en 2...");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println(" ");
+        System.out.println("Resultado en 1...");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println(" ");
+
+
+
+        if (random % 2 == 0) {
             System.out.println("El ganador es " + x.nombreEquipo);
-        }else{
+        } else {
             System.out.println("El ganador es " + y.nombreEquipo);
         }
+        System.out.println("");
     }
 
    
