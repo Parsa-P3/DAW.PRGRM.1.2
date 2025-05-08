@@ -1,0 +1,59 @@
+Ejercicios III. Iteradores - Excepciones
+1. Desarrolla una aplicación para gestionar una colección de empleados, permitiendo la
+manipulación de sus salarios mediante un iterador y la gestión de errores
+específicos/personalizados.
+
+                    a Clase Empleado:
+
+• nombre (String) para almacenar el nombre del empleado.
+• edad (int) para almacenar la edad del empleado.
+• salario (double) para almacenar el salario del empleado.
+• Implementa un constructor que inicialice los 3 atributos.
+• Implementa los getter para nombre, edad y salario.
+• Implementa el setter para el salario.
+
+            b Excepción Personalizada EmpleadoNoEncontradoException:
+
+• Define una nueva clase de excepción personalizada llamada
+EmpleadoNoEncontradoException (hereda de la clase Exception )
+• Incluye un constructor público para esta excepción que pueda recibir un mensaje
+descriptivo del error.
+
+            c Clase GestionEmpleados:
+
+• Contiene una colección para almacenar objetos de tipo Empleado (ArrayList)
+• Implementa un método público llamado agregarEmpleado(Empleado empleado)
+que permita añadir un objeto Empleado a la lista.
+• Implementa un método público llamado obtenerIteradorEmpleados() que
+devuelva un objeto de tipo java.util.Iterator para recorrer la lista de empleados.
+• Implementa un método público llamado
+aumentarSalarioEmpleadosMayoresDe30(double porcentajeAumento) que
+realice las siguientes acciones:
+o Obtener un Iterator de la lista de empleados utilizando el método
+obtenerIteradorEmpleados().
+o Itera sobre la lista de empleados utilizando el Iterator.
+o Por cada empleado en la lista, verifica si su edad es mayor que 30.
+o Si la edad del empleado es mayor que 30, aumenta su salario en el
+porcentajeAumento especificado.
+• Implementa un método público llamado buscarEmpleadoPorNombre(String
+nombre) que realice lo siguiente:
+o Recorre la lista de empleados.
+o Si encuentra un empleado cuyo nombre coincida con el nombre
+proporcionado, devuelve ese objeto Empleado.
+o Si después de recorrer toda la lista no se encuentra ningún empleado con
+el nombre especificado, lanza una excepción de tipo
+EmpleadoNoEncontradoException con un mensaje informativo (por
+ejemplo, "No se encontró ningún empleado con el nombre: [nombre]").
+
+                d Clase AppEmpleados, para probar la correcta implementación del sistema:
+                
+• Crea varias instancias de la clase Empleado y las agrega a instancia de
+GestionEmpleados.
+• Llama al método aumentarSalarioEmpleadosMayoresDe30 para aumentar el
+salario de los empleados mayores de 30 en un porcentaje específico.
+• Intenta buscar un empleado por su nombre utilizando el método
+buscarEmpleadoPorNombre.
+• Implementa un bloque try-catch para manejar la excepción
+EmpleadoNoEncontradoException que pueda lanzarse al intentar buscar un
+empleado inexistente. Muestra un mensaje informativo en caso de que la
+excepción sea capturada.

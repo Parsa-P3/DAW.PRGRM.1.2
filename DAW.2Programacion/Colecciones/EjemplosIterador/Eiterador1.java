@@ -13,6 +13,7 @@ public class Eiterador1 {
          ArrayList<Integer> nums = new ArrayList<>();
 
          Integer bir = scanner.nextInt();
+         
          while (bir != -1) {
             if (bir<0) {
                 System.out.println("No puede ser negativo!!");
