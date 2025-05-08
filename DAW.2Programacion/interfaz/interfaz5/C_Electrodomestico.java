@@ -3,14 +3,14 @@ package interfaz5;
 abstract class C_Electrodomestico {
     private String marca;
     private String modelo;
-    private String tipo;
+    private E_EnumTipoElectro tipo;
     private String estado;
     private String antiguedad;
     private boolean garantia;
     B_Cliente cliente;
 
 
-    public C_Electrodomestico(String marca, String modelo, String tipo, String estado, String antiguedad,
+    public C_Electrodomestico(String marca, String modelo, E_EnumTipoElectro tipo, String estado, String antiguedad,
             boolean garantia, B_Cliente cliente) {
         this.marca = marca;
         this.modelo = modelo;
@@ -22,8 +22,11 @@ abstract class C_Electrodomestico {
     }
 
 
+    abstract void reparar();
     
-    
+    abstract void probar();
+
+    public void mostrarInformacion(){};
 
     public void setMarca(String marca) {
         this.marca = marca;
@@ -37,7 +40,7 @@ abstract class C_Electrodomestico {
 
 
 
-    public void setTipo(String tipo) {
+    public void setTipo(E_EnumTipoElectro tipo) {
         this.tipo = tipo;
     }
 
@@ -77,10 +80,7 @@ abstract class C_Electrodomestico {
     }
 
 
-    public String getTipo() {
-        return tipo;
-    }
-
+ 
 
     public String getEstado() {
         return estado;
@@ -103,11 +103,8 @@ abstract class C_Electrodomestico {
 
 
 
-
-
-    @Override
-    public String toString() {
-        return tipo ;
+    public E_EnumTipoElectro getTipo() {
+        return tipo;
     }
 
 

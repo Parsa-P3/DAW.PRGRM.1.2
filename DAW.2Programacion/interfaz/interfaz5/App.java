@@ -11,7 +11,7 @@ public class App {
         clientes[4] = new B_Cliente("David", 1, "madrid", false);
             
 
-        C_Televisor tv1 = new C_Televisor("VESTEL", "OLED", "Televisor", "Nuevo", "2 años", false, clientes[0] , "48inch");
+        C_Televisor tv1 = new C_Televisor("VESTEL", "OLED", "Nuevo", "2 años", false, clientes[0] , "48inch");
         
 
         B_Tecnico[] tecnicos = new B_Tecnico[5];

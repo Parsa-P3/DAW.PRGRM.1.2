@@ -27,12 +27,12 @@ public class D_TallerReparacion implements A_GestionOrdenes {
                 tecnico[i] = t;
                 contadorTecnicos++;
                 anadir = true;
-                System.out.println("Técnico añadido.");
+                System.out.println("Tecnico anadido.");
                 break;
             }
         }
         if (!anadir) {
-            System.out.println("No se puede añadir mas tecnicos");
+            System.out.println("No se puede anadir mas tecnicos");
         }
     }
 
@@ -91,6 +91,7 @@ public class D_TallerReparacion implements A_GestionOrdenes {
             }
         }
 
+        // lo tengo mal!
     @Override
     public void asignarT(B_Tecnico t) {
          

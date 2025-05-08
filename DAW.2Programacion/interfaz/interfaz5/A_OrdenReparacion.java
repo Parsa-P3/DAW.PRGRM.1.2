@@ -220,7 +220,7 @@ public class A_OrdenReparacion {
 
     @Override
     public String toString() {
-        if(this.estado.equals("Pendiente!")){
+        if(this.tecnico == null){
             return "- CodigoOrden = " + CodigoOrden + "\n" 
             + "- fechaCreacion = " + fechaCreacion + "\n"
             + "- electrodomestico = " + electrodomestico + "\n"
@@ -230,7 +230,9 @@ public class A_OrdenReparacion {
             + "- numPiezasUsadas = " + numPiezasUsadas + "\n"
             + "- costeTotal = " + costeTotal + "\n"
             + "- tiempoEstimado = " + tiempoEstimado + "\n";
-   } else {
+        }
+    
+       else {
        return "- CodigoOrden = " + CodigoOrden + "\n"
             + "- fechaCreacion = " + fechaCreacion + "\n"
             + "- electrodomestico = " + electrodomestico + "\n"
