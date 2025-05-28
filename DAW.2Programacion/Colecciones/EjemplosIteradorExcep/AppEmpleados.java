@@ -45,7 +45,8 @@ public class AppEmpleados {
         } catch (EmpleadoNoEncontradoException e) {
             System.out.println(e.getMessage());
         }
-
+       
 
     }
 }
+ 
