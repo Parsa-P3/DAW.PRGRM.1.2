@@ -31,18 +31,19 @@ public class F1 {
         if(bucle == 1){
             AnyadirEstudiante("Prometeo.txt");
         }else if (bucle == 2 ) {
-          List<Estudiante> Estudiantes = leerEstudiante("Prometeo.txt");  
+          List<Estudiante> Estudiantes = leerEstudiante("Prometeo.txt" , true);  
           
         }else if(bucle ==3){
-          List<Estudiante> Estudiantes = leerEstudiante("Prometeo.txt");  
+          List<Estudiante> Estudiantes = leerEstudiante("Prometeo.txt" , false);  
           double promedio = calcularPromedio(Estudiantes);
           
           System.out.println("");
           System.out.println("Promedio de notas : " + promedio); 
         }else if(bucle ==4){
           // hemos dejado aqui  no imprime informeprometeo
-          List<Estudiante> Estudiantes = leerEstudiante("Prometeo.txt");      
-          generarInforme("InformePrometeo.txt",Estudiantes);
+          List<Estudiante> Estudiantes = leerEstudiante("Prometeo.txt" , false);      
+          generarInforme("informe_notas.txt",Estudiantes);
+          
           
         }
       }
@@ -61,7 +62,11 @@ public class F1 {
         String nombreAlumno = scanner.nextLine();
         if (nombreAlumno.equalsIgnoreCase("q")) break;
         System.out.println("Porfavor introduce la nota :");
-        int notaAlumno =Integer.parseInt(scanner.nextLine()); 
+        int notaAlumno = -1 ; 
+        do{
+          System.out.println("(Nota debe ser entre 0 y 10)");
+          notaAlumno=Integer.parseInt(scanner.nextLine()); 
+        }while(notaAlumno < 0 || notaAlumno >10);
 
        
           
@@ -74,11 +79,11 @@ public class F1 {
         
 
     } catch (IOException e) {
-        System.out.println("Error al escribir archivo!");
+        System.out.println("Error al escribir archivo!" + e.getMessage());
     }
     }
 
-    public static List<Estudiante> leerEstudiante(String nombreArchivo){
+    public static List<Estudiante> leerEstudiante(String nombreArchivo , boolean Mostrar){
         List<Estudiante> estudiantes = new ArrayList<>();
 
         try (BufferedReader br = new BufferedReader(new FileReader(nombreArchivo))){
@@ -89,12 +94,15 @@ public class F1 {
               String nombre = x[0].trim();
               int nota = Integer.parseInt(x[1].trim());
               estudiantes.add(new Estudiante(nombre, nota));
+              if(Mostrar == true){
               System.out.println("Nombre : " +nombre +" - Nota : " +nota);
+              }
+              
             }
           }
           
         } catch (Exception e) {
-          System.out.println("Error en leer el archivo: ");
+          System.out.println("Error en leer el archivo: " + e.getMessage());
         }
         return estudiantes;
     }
@@ -114,22 +122,28 @@ public class F1 {
     try (BufferedWriter w = new BufferedWriter(new FileWriter(nomArch))) {
         w.write("-- Aprobados --");
         w.newLine();
+        System.out.println(" -- Aprobados -- ");
         for (Estudiante s : Estudiantes) {
             if (s.getNota() >= 5) {
                 w.write(s.getNombre());
                 w.newLine();
+                
+                System.out.println(s.getNombre());
             }
         }
 
+        System.out.println(" -- Suspendidos -- ");
         w.write("-- Suspendidos -- ");
         w.newLine();
         for (Estudiante s : Estudiantes) {
             if (s.getNota() < 5) {
                 w.write(s.getNombre());
                 w.newLine();
+                
+                System.out.println(s.getNombre());
             }
         }
-
+        
     } catch (IOException e) {
         System.out.println("Error al escribir el informe: " + e.getMessage());
     }
